@@ -1,39 +1,41 @@
 <div align="center">
 
 <!-- ======================================================== -->
-<!-- TOP BANNER: OBSIDIAN & CRIMSON                           -->
+<!-- TOP BANNER: DEEP OBSIDIAN & ELECTRIC PURPLE              -->
 <!-- ======================================================== -->
 <a href="https://github.com/Akshit99999">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=090D16&height=180&section=header&text=AKSHIT%20SHARMA&fontSize=48&fontColor=F8FAFC&fontAlignY=42&desc=Systems%20Architect%20%E2%80%A2%20Multimodal%20AI%20%E2%80%A2%20High-Velocity%20Builder&descFontSize=16&descColor=94A3B8&descAlignY=68" width="100%" alt="Akshit Sharma" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=07050A&height=180&section=header&text=AKSHIT%20SHARMA&fontSize=48&fontColor=F8FAFC&fontAlignY=42&desc=Systems%20Architect%20%E2%80%A2%20Autonomous%20AI%20%E2%80%A2%20High-Velocity%20Builder&descFontSize=16&descColor=C084FC&descAlignY=68" width="100%" alt="Akshit Sharma" />
 </a>
 
 <!-- ======================================================== -->
-<!-- TYPING BANNER: PURE AURA & VIBE                          -->
+<!-- TYPING BANNER: INDEPENDENT & HIGH-CALIBER                -->
 <!-- ======================================================== -->
 <a href="https://github.com/Akshit99999">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2500&pause=1000&color=FF4655&center=true&vCenter=true&multiline=true&width=720&height=75&lines=Just+a+kid+in+a+terminal+who+gets+obsessed+with+hard+problems.;Swinging+between+computer+vision%2C+autonomous+AI%2C+and+distributed+systems.;I+build+things+from+first+principles+while+the+world+is+asleep.;Fueled+by+street+chai%2C+curiosity%2C+and+zero-latency+loops." alt="Typing Banner" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2500&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&width=720&height=75&lines=Autonomous+intelligence%2C+edge+vision%2C+and+high-concurrency+scale.;I+tear+down+the+physics+and+engineer+systems+while+the+world+sleeps.;Velocity+is+my+edge.+Zero+bureaucracy%2C+zero-latency+loops.;Powered+by+double+espresso%2C+relentless+focus%2C+and+first+principles." alt="Typing Banner" />
 </a>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/STATUS-IN_THE_LAB_TINKERING-090D16?style=flat-square&labelColor=1E293B&color=FF4655" alt="Status" />
-  <img src="https://img.shields.io/badge/RADAR-AUTONOMOUS_AGENTS-090D16?style=flat-square&labelColor=1E293B&color=F59E0B" alt="Radar" />
-  <img src="https://img.shields.io/badge/VISION-REALTIME_EDGE_CV-090D16?style=flat-square&labelColor=1E293B&color=38BDF8" alt="Vision" />
-  <img src="https://img.shields.io/badge/BUGS_SQUASHED-BEFORE_DAWN-090D16?style=flat-square&labelColor=1E293B&color=10B981" alt="Bugs Squashed" />
+  <img src="https://img.shields.io/badge/STATUS-LONE_WOLF_VELOCITY-07050A?style=flat-square&labelColor=170F2E&color=7C3AED" alt="Status" />
+  <img src="https://img.shields.io/badge/RADAR-AUTONOMOUS_AGENTS-07050A?style=flat-square&labelColor=170F2E&color=8B5CF6" alt="Radar" />
+  <img src="https://img.shields.io/badge/VISION-REALTIME_EDGE_CV-07050A?style=flat-square&labelColor=170F2E&color=A855F7" alt="Vision" />
+  <img src="https://img.shields.io/badge/LATENCY-SUB--100MS_OR_BUST-07050A?style=flat-square&labelColor=170F2E&color=D946EF" alt="Latency" />
 </p>
 
 </div>
 
 ---
 
-### 🎒 The Lab Notebook
+### ⚡ The Blueprint
 
-> *"Some people need a 50-person research department and a 6-month feasibility study. I just need a terminal, good chai, and an impossible puzzle that keeps me up until 4 AM."*
+> *"Some people need a 50-person research department and a six-month feasibility study. I just need a terminal, a double espresso, and an impossible spec that keeps me locked in until dawn."*
 
-Hey, I’m **Akshit**.
+I’m **Akshit**.
 
-At heart, I’m that curious kid who tears down complex clockwork just to see how the gears mesh. I get an absurd amount of adrenaline from taking problems that usually demand an entire room of specialists—like real-time multi-camera video inference, autonomous agent reasoning, or sub-millisecond telemetry—and engineering a lean, deterministic solution solo over a weekend.
+I move alone because velocity is my competitive edge. When you eliminate bureaucracy, corporate bloat, and committee debates, you realize one hyper-focused engineer with sharp instincts and first-principles mastery can out-build an entire floor.
 
-My philosophy is straightforward: **understand the physics from first principles, strip away the bloat, and build it so well it runs silky smooth on hardware you found in a desk drawer.**
+I have an irrational obsession with systems that feel alive—whether that's low-latency computer vision decoding multiple live streams at once, autonomous agents reasoning across multi-modal sensory inputs, or distributed telemetry dashboards with razor-sharp physical feedback.
+
+If it's slow, I rewrite the bottleneck. If it's manual, I automate it. If it hasn't been built before, that just means I get to figure it out first.
 
 ---
 
@@ -42,7 +44,7 @@ My philosophy is straightforward: **understand the physics from first principles
 ```
 ┌──[ Engineering Philosophy ]
 │
-├── 01 // FIRST-PRINCIPLES CURIOSITY
+├── 01 // FIRST-PRINCIPLES SUPREMACY
 │   No black boxes allowed. Whether it's tensor quantization, memory layouts,
 │   or raw socket handshakes, I have to know *why* something is slow before I make it fly.
 │
@@ -52,9 +54,9 @@ My philosophy is straightforward: **understand the physics from first principles
 │   responsive interfaces. If software feels laggy, it breaks the immersion.
 │
 └── 03 // BATTLE-TESTED DETERMINISM
-    Scrappy late-night prototyping is fun, but production is serious.
+    Late-night hacking is fun, but production is serious business.
     I architect for failure: tamper-evident audit layers, resilient queues,
-    typed contracts, and zero-leak runtimes.
+    strictly typed contracts, and zero-leak runtimes.
 ```
 
 ---
@@ -80,28 +82,28 @@ I don't stay confined to a single box—I swing across whatever layer of the sta
 
 ---
 
-### 🕸️ Patrol Telemetry // Live Dispatch Heatmap
+### 🕸️ Patrol Telemetry // Ascending Dispatch Radar
 
-<!-- Real Data Contribution Grid with Acrobatic Web-Slinger & Kinetic Snake -->
+<!-- Chronological Ascending Commit Hunt with Dynamic Web Tracers & Vaporizing Commit Nodes -->
 <div align="center">
 
-<img src="./patrol-heatmap.svg" width="100%" alt="Real-time Patrol Contribution Heatmap with Acrobatic Hero and Snake" />
+<img src="./patrol-heatmap.svg" width="100%" alt="Real-time Patrol Contribution Heatmap with Ascending Chronological Commit Hunt" />
 
 <br/><br/>
 
-<!-- Stats Grid -->
+<!-- Stats Grid: Sleek Deep Purple Theme -->
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=Akshit99999&show_icons=true&bg_color=090D16&title_color=FF4655&text_color=94A3B8&icon_color=F59E0B&border_color=1E293B&count_private=true&include_all_commits=true&hide_border=false" width="100%" alt="GitHub Stats" />
+      <img src="https://github-readme-stats.vercel.app/api?username=Akshit99999&show_icons=true&bg_color=07050A&title_color=A855F7&text_color=94A3B8&icon_color=C084FC&border_color=2E1065&count_private=true&include_all_commits=true&hide_border=false" width="100%" alt="GitHub Stats" />
     </td>
     <td width="50%" align="center">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Akshit99999&background=090D16&border=1E293B&stroke=1E293B&ring=FF4655&fire=FF4655&currStreakLabel=F59E0B&sideNums=F1F5F9&sideLabels=94A3B8&dates=64748B" width="100%" alt="GitHub Streak" />
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Akshit99999&background=07050A&border=2E1065&stroke=2E1065&ring=A855F7&fire=A855F7&currStreakLabel=C084FC&sideNums=F1F5F9&sideLabels=94A3B8&dates=64748B" width="100%" alt="GitHub Streak" />
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Akshit99999&layout=compact&bg_color=090D16&title_color=FF4655&text_color=94A3B8&icon_color=F59E0B&border_color=1E293B&langs_count=8&hide_border=false" width="85%" alt="Top Languages" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Akshit99999&layout=compact&bg_color=07050A&title_color=A855F7&text_color=94A3B8&icon_color=C084FC&border_color=2E1065&langs_count=8&hide_border=false" width="85%" alt="Top Languages" />
     </td>
   </tr>
 </table>
@@ -158,7 +160,7 @@ I don't stay confined to a single box—I swing across whatever layer of the sta
         <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" />
         <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" />
         <img src="https://img.shields.io/badge/Leaflet-199900?style=flat-square&logo=leaflet&logoColor=white" />
-        <img src="https://img.shields.io/badge/Web%20Audio-FF4655?style=flat-square&logo=soundcharts&logoColor=white" />
+        <img src="https://img.shields.io/badge/Web%20Audio-A855F7?style=flat-square&logo=soundcharts&logoColor=white" />
       </td>
     </tr>
   </tbody>
@@ -168,22 +170,22 @@ I don't stay confined to a single box—I swing across whatever layer of the sta
 
 ### 📡 Establish Uplink
 
-Got an impossible engineering challenge, a high-throughput vision system to architect, or just want to talk compiler internals and neural loops over chai?
+Got an impossible engineering challenge, a high-throughput vision system to architect, or an autonomous agent pipeline waiting to be solved?
 
 <p align="center">
   <a href="mailto:akshitsharma684@gmail.com">
-    <img src="https://img.shields.io/badge/Direct_Mail-akshitsharma684@gmail.com-FF4655?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Direct_Mail-akshitsharma684@gmail.com-A855F7?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/Akshit99999">
-    <img src="https://img.shields.io/badge/GitHub-Akshit99999-1E293B?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-Akshit99999-1E1B2E?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
   </a>
   &nbsp;&nbsp;
   <a href="https://linkedin.com">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-7C3AED?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
 </p>
 
 <div align="center">
-  <p><sub><i>"Wait, you built this whole pipeline over the weekend?" — "Yeah, couldn't sleep."</i></sub></p>
+  <p><sub><i>"Wait, you built this whole architecture over the weekend?" — "Yeah, couldn't sleep."</i></sub></p>
 </div>
