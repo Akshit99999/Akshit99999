@@ -5,6 +5,13 @@ with open('calendar_data.json') as f:
 
 weeks = cal['weeks']
 
+# Dynamically compute stats from the data
+total_contributions = cal.get('totalContributions', 0)
+peak_day = max(
+    (day['contributionCount'] for week in weeks for day in week['contributionDays']),
+    default=0
+)
+
 start_x = 72
 start_y = 75
 tile_size = 11
@@ -121,10 +128,10 @@ svg_output = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 215" w
     <!-- Header Badges -->
     <g transform="translate(560, -3)">
       <rect x="0" y="0" width="130" height="22" rx="4" fill="#170F2E" stroke="#3B1768" stroke-width="0.8" />
-      <text x="12" y="15" fill="#C084FC" font-size="10.5" font-family="monospace" font-weight="600">⚡ 296 DISPATCHES</text>
+      <text x="12" y="15" fill="#C084FC" font-size="10.5" font-family="monospace" font-weight="600">⚡ {total_contributions} DISPATCHES</text>
 
       <rect x="140" y="0" width="145" height="22" rx="4" fill="#170F2E" stroke="#A855F7" stroke-width="0.8" />
-      <text x="150" y="15" fill="#A855F7" font-size="10.5" font-family="monospace" font-weight="600">🎯 PEAK: 96 IN A DAY</text>
+      <text x="150" y="15" fill="#A855F7" font-size="10.5" font-family="monospace" font-weight="600">🎯 PEAK: {peak_day} IN A DAY</text>
     </g>
   </g>
 

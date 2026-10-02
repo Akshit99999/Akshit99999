@@ -36,11 +36,11 @@
   <!-- Container Box -->
   <rect x="0" y="0" width="900" height="215" rx="10" fill="url(#bgGrad)" stroke="#2E1065" stroke-width="1.2" />
 
-  <!-- Clean Tech HUD Accents -->
+  <!-- Subtle Corner Geometry / Web Strands -->
   <g opacity="0.08" stroke="#C084FC" stroke-width="0.8">
     <line x1="0" y1="42" x2="900" y2="42" />
-    <path d="M12,12 L28,12 M12,12 L12,28" stroke-width="1.2" />
-    <path d="M888,12 L872,12 M888,12 L888,28" stroke-width="1.2" />
+    <path d="M0,0 L35,0 M0,0 L0,35 M0,0 L25,25" stroke-width="1.2" />
+    <path d="M900,0 L865,0 M900,0 L900,35 M900,0 L875,25" stroke-width="1.2" />
   </g>
 
   <!-- Header Section -->

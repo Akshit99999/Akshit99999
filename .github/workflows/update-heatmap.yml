@@ -1,0 +1,63 @@
+name: Update Contribution Heatmap
+
+on:
+  schedule:
+    - cron: '0 2 * * *'   # runs every day at 2 AM UTC (~7:30 AM IST)
+  workflow_dispatch:        # lets you trigger it manually from GitHub too
+  push:
+    branches: [main]        # also re-generates on every push
+
+jobs:
+  update-heatmap:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch latest contribution data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh api graphql -f query='
+          {
+            user(login: "Akshit99999") {
+              contributionsCollection {
+                contributionCalendar {
+                  totalContributions
+                  weeks {
+                    contributionDays {
+                      date
+                      contributionCount
+                    }
+                  }
+                }
+              }
+            }
+          }' --jq '.data.user.contributionsCollection.contributionCalendar' > calendar_data.json
+          echo "Fetched contribution data:"
+          cat calendar_data.json | python3 -c "import sys,json; d=json.load(sys.stdin); print(f'Total: {d[\"totalContributions\"]} contributions')"
+
+      - name: Regenerate heatmap SVG
+        run: python3 generate_heatmap.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add calendar_data.json patrol-heatmap.svg
+          if git diff --staged --quiet; then
+            echo "No changes — heatmap is already up to date."
+          else
+            git commit -m "chore: auto-update contribution heatmap [$(date +'%Y-%m-%d')]"
+            git push
+          fi
