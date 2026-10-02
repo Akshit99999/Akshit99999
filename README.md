@@ -182,7 +182,7 @@ Always open to discussing hard engineering problems, computer vision pipelines, 
     <img src="https://img.shields.io/badge/GitHub-Akshit99999-1E1B2E?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://linkedin.com">
+  <a href="https://www.linkedin.com/in/akshit-sharma-4013bb384">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-7C3AED?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
 </p>
