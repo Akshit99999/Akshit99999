@@ -11,7 +11,7 @@
 <!-- TYPING BANNER: GROUNDED, CURIOUS, HIGH-ENERGY            -->
 <!-- ======================================================== -->
 <a href="https://github.com/Akshit99999">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2500&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&width=720&height=75&lines=Curiosity-driven+engineering+meets+high-speed+systems+design.;Swinging+between+computer+vision%2C+autonomous+AI%2C+and+distributed+scale.;Taking+apart+complex+puzzles+and+building+lean+solutions+from+scratch.;Powered+by+black+coffee%2C+good+music%2C+and+first-principles+physics." alt="Typing Banner" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2500&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&width=720&height=75&lines=Curiosity-driven+engineering+meets+high-speed+systems+design.;Navigating+between+computer+vision%2C+autonomous+AI%2C+and+distributed+scale.;Taking+apart+complex+puzzles+and+building+lean+solutions+from+scratch.;Powered+by+cold+coffee%2C+good+music%2C+and+first-principles+physics." alt="Typing Banner" />
 </a>
 
 <p align="center">
@@ -35,7 +35,7 @@ I’m a software engineer and builder driven by genuine curiosity and a love for
 
 For me, good engineering isn't about piling on bloated abstractions or overly complex scaffolding. It’s about **understanding the physics from first principles**, stripping away the noise, and building solutions that run fast, feel intuitive, and hold up under real-world pressure. 
 
-Give me a good terminal, a black coffee, and an interesting problem, and I'm happily locked in until it's solved.
+Give me a good terminal, a cold coffee, and an interesting problem, and I'm happily locked in until it's solved.
 
 ---
 
@@ -83,7 +83,7 @@ I enjoy moving across whatever layer of the stack the problem demands:
 
 ---
 
-### 🕸️ Patrol Telemetry // Dispatch Radar
+### 📊 Activity Telemetry // Dispatch Radar
 
 <!-- Clean Cyber Violet Contribution Radar (296 Dispatches, Peak: 96 in a day) -->
 <div align="center">
