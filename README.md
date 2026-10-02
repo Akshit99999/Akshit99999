@@ -4,66 +4,67 @@
 <!-- TOP BANNER: DEEP OBSIDIAN & ELECTRIC PURPLE              -->
 <!-- ======================================================== -->
 <a href="https://github.com/Akshit99999">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=07050A&height=180&section=header&text=AKSHIT%20SHARMA&fontSize=48&fontColor=F8FAFC&fontAlignY=42&desc=Systems%20Architect%20%E2%80%A2%20Autonomous%20AI%20%E2%80%A2%20High-Velocity%20Builder&descFontSize=16&descColor=C084FC&descAlignY=68" width="100%" alt="Akshit Sharma" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=07050A&height=180&section=header&text=AKSHIT%20SHARMA&fontSize=48&fontColor=F8FAFC&fontAlignY=42&desc=Software%20Engineer%20%E2%80%A2%20Multimodal%20AI%20%E2%80%A2%20Systems%20Builder&descFontSize=16&descColor=C084FC&descAlignY=68" width="100%" alt="Akshit Sharma" />
 </a>
 
 <!-- ======================================================== -->
-<!-- TYPING BANNER: INDEPENDENT & HIGH-CALIBER                -->
+<!-- TYPING BANNER: GROUNDED, CURIOUS, HIGH-ENERGY            -->
 <!-- ======================================================== -->
 <a href="https://github.com/Akshit99999">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2500&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&width=720&height=75&lines=Autonomous+intelligence%2C+edge+vision%2C+and+high-concurrency+scale.;I+tear+down+the+physics+and+engineer+systems+while+the+world+sleeps.;Velocity+is+my+edge.+Zero+bureaucracy%2C+zero-latency+loops.;Powered+by+double+espresso%2C+relentless+focus%2C+and+first+principles." alt="Typing Banner" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2500&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&width=720&height=75&lines=Curiosity-driven+engineering+meets+high-speed+systems+design.;Swinging+between+computer+vision%2C+autonomous+AI%2C+and+distributed+scale.;Taking+apart+complex+puzzles+and+building+lean+solutions+from+scratch.;Powered+by+black+coffee%2C+good+music%2C+and+first-principles+physics." alt="Typing Banner" />
 </a>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/STATUS-LONE_WOLF_VELOCITY-07050A?style=flat-square&labelColor=170F2E&color=7C3AED" alt="Status" />
-  <img src="https://img.shields.io/badge/RADAR-AUTONOMOUS_AGENTS-07050A?style=flat-square&labelColor=170F2E&color=8B5CF6" alt="Radar" />
+  <img src="https://img.shields.io/badge/STATUS-IN_THE_LAB_BUILDING-07050A?style=flat-square&labelColor=170F2E&color=7C3AED" alt="Status" />
+  <img src="https://img.shields.io/badge/FOCUS-AUTONOMOUS_AGENTS-07050A?style=flat-square&labelColor=170F2E&color=8B5CF6" alt="Focus" />
   <img src="https://img.shields.io/badge/VISION-REALTIME_EDGE_CV-07050A?style=flat-square&labelColor=170F2E&color=A855F7" alt="Vision" />
-  <img src="https://img.shields.io/badge/LATENCY-SUB--100MS_OR_BUST-07050A?style=flat-square&labelColor=170F2E&color=D946EF" alt="Latency" />
+  <img src="https://img.shields.io/badge/PHILOSOPHY-LEAN_&_DETERMINISTIC-07050A?style=flat-square&labelColor=170F2E&color=C084FC" alt="Philosophy" />
 </p>
 
 </div>
 
 ---
 
-### ⚡ The Blueprint
+### 🎒 The Lab Notebook
 
-> *"Some people need a 50-person research department and a six-month feasibility study. I just need a terminal, a double espresso, and an impossible spec that keeps me locked in until dawn."*
+> *"I’ve always loved taking things apart just to see how the clockwork moves—and then seeing if I can rebuild it a little faster, a little leaner, and a lot more resilient."*
 
-I’m **Akshit**.
+Hey, I’m **Akshit**.
 
-I move alone because velocity is my competitive edge. When you eliminate bureaucracy, corporate bloat, and committee debates, you realize one hyper-focused engineer with sharp instincts and first-principles mastery can out-build an entire floor.
+I’m a software engineer and builder driven by genuine curiosity and a love for the craft. I find myself most in my element at the intersections of **computer vision, autonomous multimodal systems, and distributed scale**—tackling the messy, challenging puzzles where real-world sensors, live networks, and AI models meet.
 
-I have an irrational obsession with systems that feel alive—whether that's low-latency computer vision decoding multiple live streams at once, autonomous agents reasoning across multi-modal sensory inputs, or distributed telemetry dashboards with razor-sharp physical feedback.
+For me, good engineering isn't about piling on bloated abstractions or overly complex scaffolding. It’s about **understanding the physics from first principles**, stripping away the noise, and building solutions that run fast, feel intuitive, and hold up under real-world pressure. 
 
-If it's slow, I rewrite the bottleneck. If it's manual, I automate it. If it hasn't been built before, that just means I get to figure it out first.
+Give me a good terminal, a black coffee, and an interesting problem, and I'm happily locked in until it's solved.
 
 ---
 
-### 🧠 The Operating System
+### 🧠 The Engineering Notes
 
 ```
-┌──[ Engineering Philosophy ]
+┌──[ Guiding Principles ]
 │
-├── 01 // FIRST-PRINCIPLES SUPREMACY
+├── 01 // CURIOSITY FIRST, ALWAYS
 │   No black boxes allowed. Whether it's tensor quantization, memory layouts,
-│   or raw socket handshakes, I have to know *why* something is slow before I make it fly.
+│   or raw socket handshakes, I want to truly understand what's happening underneath
+│   before trying to optimize it.
 │
 ├── 02 // SENSOR-TO-SCREEN AGILITY
-│   Connecting the physical world to high-contrast digital instrumentation:
+│   Connecting real-world physical signals to clean digital instrumentation:
 │   camera feeds, audio waves, and live transit telemetries turned into fast, tactile,
-│   responsive interfaces. If software feels laggy, it breaks the immersion.
+│   responsive interfaces that feel natural to use.
 │
-└── 03 // BATTLE-TESTED DETERMINISM
-    Late-night hacking is fun, but production is serious business.
-    I architect for failure: tamper-evident audit layers, resilient queues,
-    strictly typed contracts, and zero-leak runtimes.
+└── 03 // CRAFT & RELIABILITY
+    Prototyping fast is fun, but shipping systems that stay up under pressure
+    is what really counts. I care about strictly typed boundaries, resilient queues,
+    and software people can genuinely rely on.
 ```
 
 ---
 
-### 🔬 Frontiers of Obsession
+### 🔬 Frontiers of Exploration
 
-I don't stay confined to a single box—I swing across whatever layer of the stack the problem demands:
+I enjoy moving across whatever layer of the stack the problem demands:
 
 - **👁️ Vision & Edge Optics**  
   Real-time video ingestion (RTSP/WebRTC) under microsecond constraints. Multi-target tracking, low-latency edge inference via TensorRT/ONNX, biometric matching, and tamper-evident audit logging.
@@ -82,12 +83,12 @@ I don't stay confined to a single box—I swing across whatever layer of the sta
 
 ---
 
-### 🕸️ Patrol Telemetry // Ascending Dispatch Radar
+### 🕸️ Patrol Telemetry // Dispatch Radar
 
-<!-- Chronological Ascending Commit Hunt with Dynamic Web Tracers & Vaporizing Commit Nodes -->
+<!-- Clean Cyber Violet Contribution Radar (296 Dispatches, Peak: 96 in a day) -->
 <div align="center">
 
-<img src="./patrol-heatmap.svg" width="100%" alt="Real-time Patrol Contribution Heatmap with Ascending Chronological Commit Hunt" />
+<img src="./patrol-heatmap.svg" width="100%" alt="Real-time Patrol Contribution Heatmap" />
 
 <br/><br/>
 
@@ -170,7 +171,7 @@ I don't stay confined to a single box—I swing across whatever layer of the sta
 
 ### 📡 Establish Uplink
 
-Got an impossible engineering challenge, a high-throughput vision system to architect, or an autonomous agent pipeline waiting to be solved?
+Always open to discussing hard engineering problems, computer vision pipelines, autonomous systems, or interesting ideas over coffee.
 
 <p align="center">
   <a href="mailto:akshitsharma684@gmail.com">
@@ -187,5 +188,5 @@ Got an impossible engineering challenge, a high-throughput vision system to arch
 </p>
 
 <div align="center">
-  <p><sub><i>"Wait, you built this whole architecture over the weekend?" — "Yeah, couldn't sleep."</i></sub></p>
+  <p><sub><i>"Always building, always learning."</i></sub></p>
 </div>

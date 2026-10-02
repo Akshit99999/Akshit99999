@@ -1,15 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="100%" height="330">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 215" width="100%" height="215">
   <defs>
-    <!-- Purple Cyber Glow Filters -->
-    <filter id="purple-glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3.5" result="blur" />
+    <filter id="purple-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
 
-    <filter id="laser-glow" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="glow-magenta" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="2.5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
@@ -18,1224 +17,443 @@
     </filter>
 
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#14092A" />
+      <stop offset="0%" stop-color="#120A22" />
       <stop offset="100%" stop-color="#07050E" />
-    </linearGradient>
-
-    <!-- Stealth Violet Suit Gradients -->
-    <linearGradient id="stealthSuit" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#A855F7" />
-      <stop offset="100%" stop-color="#6B21A8" />
-    </linearGradient>
-
-    <linearGradient id="darkArmor" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1E1638" />
-      <stop offset="100%" stop-color="#0A0614" />
-    </linearGradient>
-
-    <linearGradient id="laserTracer" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="50%" stop-color="#C084FC" />
-      <stop offset="100%" stop-color="#A855F7" />
     </linearGradient>
   </defs>
 
   <style>
-    @keyframes heroAscendingHunt {
-      0% { transform: translate(100px, 35px) scale(0.9) rotate(-25deg); opacity: 0; }
-      3% { transform: translate(160px, 60px) scale(0.95) rotate(-15deg); opacity: 1; }
-      7.91% { transform: translate(357px, 206px) scale(0.95) rotate(-18deg); opacity: 1; }
-      11.82% { transform: translate(651px, 262px) scale(0.95) rotate(18deg); opacity: 1; }
-      15.73% { transform: translate(665px, 234px) scale(0.95) rotate(-18deg); opacity: 1; }
-      19.64% { transform: translate(679px, 206px) scale(0.95) rotate(18deg); opacity: 1; }
-      23.55% { transform: translate(735px, 220px) scale(0.95) rotate(-18deg); opacity: 1; }
-      27.45% { transform: translate(735px, 234px) scale(0.95) rotate(18deg); opacity: 1; }
-      31.36% { transform: translate(749px, 178px) scale(0.95) rotate(-18deg); opacity: 1; }
-      35.27% { transform: translate(749px, 262px) scale(0.95) rotate(18deg); opacity: 1; }
-      39.18% { transform: translate(763px, 178px) scale(0.95) rotate(-18deg); opacity: 1; }
-      43.09% { transform: translate(763px, 192px) scale(0.95) rotate(18deg); opacity: 1; }
-      47.00% { transform: translate(763px, 206px) scale(0.95) rotate(-18deg); opacity: 1; }
-      50.91% { transform: translate(763px, 220px) scale(0.95) rotate(18deg); opacity: 1; }
-      54.82% { transform: translate(777px, 178px) scale(0.95) rotate(-18deg); opacity: 1; }
-      58.73% { transform: translate(777px, 206px) scale(0.95) rotate(18deg); opacity: 1; }
-      62.64% { transform: translate(777px, 262px) scale(0.95) rotate(-18deg); opacity: 1; }
-      66.55% { transform: translate(791px, 192px) scale(0.95) rotate(18deg); opacity: 1; }
-      70.45% { transform: translate(791px, 206px) scale(0.95) rotate(-18deg); opacity: 1; }
-      74.36% { transform: translate(791px, 220px) scale(0.95) rotate(18deg); opacity: 1; }
-      78.27% { transform: translate(791px, 248px) scale(0.95) rotate(-18deg); opacity: 1; }
-      82.18% { transform: translate(805px, 220px) scale(0.95) rotate(18deg); opacity: 1; }
-      86.09% { transform: translate(805px, 234px) scale(0.95) rotate(-18deg); opacity: 1; }
-      90.00% { transform: translate(805px, 248px) scale(0.95) rotate(18deg); opacity: 1; }
-      92% { transform: translate(840px, 35px) scale(0.95) rotate(-35deg); opacity: 1; }
-      96%, 100% { transform: translate(890px, -20px) scale(0.85) rotate(-45deg); opacity: 0; }
-    }
-
-    @keyframes webTracerFlight {
-      6.15% { x1: 332; y1: 161; x2: 357; y2: 223; opacity: 0.95; stroke-dashoffset: 0; }
-      7.91% { x1: 357; y1: 206; x2: 357; y2: 223; opacity: 0; stroke-dashoffset: 80; }
-      10.06% { x1: 626; y1: 217; x2: 651; y2: 279; opacity: 0.95; stroke-dashoffset: 0; }
-      11.82% { x1: 651; y1: 262; x2: 651; y2: 279; opacity: 0; stroke-dashoffset: 80; }
-      13.97% { x1: 640; y1: 189; x2: 665; y2: 251; opacity: 0.95; stroke-dashoffset: 0; }
-      15.73% { x1: 665; y1: 234; x2: 665; y2: 251; opacity: 0; stroke-dashoffset: 80; }
-      17.88% { x1: 654; y1: 161; x2: 679; y2: 223; opacity: 0.95; stroke-dashoffset: 0; }
-      19.64% { x1: 679; y1: 206; x2: 679; y2: 223; opacity: 0; stroke-dashoffset: 80; }
-      21.79% { x1: 710; y1: 175; x2: 735; y2: 237; opacity: 0.95; stroke-dashoffset: 0; }
-      23.55% { x1: 735; y1: 220; x2: 735; y2: 237; opacity: 0; stroke-dashoffset: 80; }
-      25.70% { x1: 710; y1: 189; x2: 735; y2: 251; opacity: 0.95; stroke-dashoffset: 0; }
-      27.45% { x1: 735; y1: 234; x2: 735; y2: 251; opacity: 0; stroke-dashoffset: 80; }
-      29.60% { x1: 724; y1: 133; x2: 749; y2: 195; opacity: 0.95; stroke-dashoffset: 0; }
-      31.36% { x1: 749; y1: 178; x2: 749; y2: 195; opacity: 0; stroke-dashoffset: 80; }
-      33.51% { x1: 724; y1: 217; x2: 749; y2: 279; opacity: 0.95; stroke-dashoffset: 0; }
-      35.27% { x1: 749; y1: 262; x2: 749; y2: 279; opacity: 0; stroke-dashoffset: 80; }
-      37.42% { x1: 738; y1: 133; x2: 763; y2: 195; opacity: 0.95; stroke-dashoffset: 0; }
-      39.18% { x1: 763; y1: 178; x2: 763; y2: 195; opacity: 0; stroke-dashoffset: 80; }
-      41.33% { x1: 738; y1: 147; x2: 763; y2: 209; opacity: 0.95; stroke-dashoffset: 0; }
-      43.09% { x1: 763; y1: 192; x2: 763; y2: 209; opacity: 0; stroke-dashoffset: 80; }
-      45.24% { x1: 738; y1: 161; x2: 763; y2: 223; opacity: 0.95; stroke-dashoffset: 0; }
-      47.00% { x1: 763; y1: 206; x2: 763; y2: 223; opacity: 0; stroke-dashoffset: 80; }
-      49.15% { x1: 738; y1: 175; x2: 763; y2: 237; opacity: 0.95; stroke-dashoffset: 0; }
-      50.91% { x1: 763; y1: 220; x2: 763; y2: 237; opacity: 0; stroke-dashoffset: 80; }
-      53.06% { x1: 752; y1: 133; x2: 777; y2: 195; opacity: 0.95; stroke-dashoffset: 0; }
-      54.82% { x1: 777; y1: 178; x2: 777; y2: 195; opacity: 0; stroke-dashoffset: 80; }
-      56.97% { x1: 752; y1: 161; x2: 777; y2: 223; opacity: 0.95; stroke-dashoffset: 0; }
-      58.73% { x1: 777; y1: 206; x2: 777; y2: 223; opacity: 0; stroke-dashoffset: 80; }
-      60.88% { x1: 752; y1: 217; x2: 777; y2: 279; opacity: 0.95; stroke-dashoffset: 0; }
-      62.64% { x1: 777; y1: 262; x2: 777; y2: 279; opacity: 0; stroke-dashoffset: 80; }
-      64.79% { x1: 766; y1: 147; x2: 791; y2: 209; opacity: 0.95; stroke-dashoffset: 0; }
-      66.55% { x1: 791; y1: 192; x2: 791; y2: 209; opacity: 0; stroke-dashoffset: 80; }
-      68.70% { x1: 766; y1: 161; x2: 791; y2: 223; opacity: 0.95; stroke-dashoffset: 0; }
-      70.45% { x1: 791; y1: 206; x2: 791; y2: 223; opacity: 0; stroke-dashoffset: 80; }
-      72.60% { x1: 766; y1: 175; x2: 791; y2: 237; opacity: 0.95; stroke-dashoffset: 0; }
-      74.36% { x1: 791; y1: 220; x2: 791; y2: 237; opacity: 0; stroke-dashoffset: 80; }
-      76.51% { x1: 766; y1: 203; x2: 791; y2: 265; opacity: 0.95; stroke-dashoffset: 0; }
-      78.27% { x1: 791; y1: 248; x2: 791; y2: 265; opacity: 0; stroke-dashoffset: 80; }
-      80.42% { x1: 780; y1: 175; x2: 805; y2: 237; opacity: 0.95; stroke-dashoffset: 0; }
-      82.18% { x1: 805; y1: 220; x2: 805; y2: 237; opacity: 0; stroke-dashoffset: 80; }
-      84.33% { x1: 780; y1: 189; x2: 805; y2: 251; opacity: 0.95; stroke-dashoffset: 0; }
-      86.09% { x1: 805; y1: 234; x2: 805; y2: 251; opacity: 0; stroke-dashoffset: 80; }
-      88.24% { x1: 780; y1: 203; x2: 805; y2: 265; opacity: 0.95; stroke-dashoffset: 0; }
-      90.00% { x1: 805; y1: 248; x2: 805; y2: 265; opacity: 0; stroke-dashoffset: 80; }
-    }
-
     @keyframes beaconPulse {
       0%, 100% { opacity: 1; transform: scale(1); }
       50% { opacity: 0.35; transform: scale(0.9); }
     }
-
-    @keyframes shockwaveSept8 {
-      0%, 46% { r: 2; opacity: 0; }
-      48% { r: 5; opacity: 1; stroke-width: 2.5; }
-      54% { r: 28; opacity: 0; stroke-width: 0.5; }
-      100% { opacity: 0; }
-    }
-
-    .hero-acrobat {
-      animation: heroAscendingHunt 16s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
-    }
-
-    .web-tracer-line {
-      stroke: url(#laserTracer);
-      stroke-width: 1.8;
-      stroke-dasharray: 4, 1.5;
-      animation: webTracerFlight 16s ease-out infinite;
-    }
-
     .pulse-beacon {
       transform-origin: 8px 8px;
-      animation: beaconPulse 2s ease-in-out infinite;
-    }
-
-    .shockwave-burst {
-      animation: shockwaveSept8 16s ease-out infinite;
-    }
-
-    
-    @keyframes vaporize_tile_20_2 {
-      0%, 7.71% {
-        opacity: 0.95;
-        fill: #7C3AED;
-        transform: scale(1);
-      }
-      7.91% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      8.41%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #7C3AED;
-        transform: scale(1);
-      }
-    }
-    #tile_20_2 {
-      transform-origin: 357px 223px;
-      animation: vaporize_tile_20_2 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_41_6 {
-      0%, 11.62% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-      11.82% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      12.32%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-    }
-    #tile_41_6 {
-      transform-origin: 651px 279px;
-      animation: vaporize_tile_41_6 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_42_4 {
-      0%, 15.53% {
-        opacity: 0.95;
-        fill: #7C3AED;
-        transform: scale(1);
-      }
-      15.73% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      16.23%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #7C3AED;
-        transform: scale(1);
-      }
-    }
-    #tile_42_4 {
-      transform-origin: 665px 251px;
-      animation: vaporize_tile_42_4 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_43_2 {
-      0%, 19.44% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-      19.64% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      20.14%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-    }
-    #tile_43_2 {
-      transform-origin: 679px 223px;
-      animation: vaporize_tile_43_2 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_47_3 {
-      0%, 23.35% {
-        opacity: 0.95;
-        fill: #7C3AED;
-        transform: scale(1);
-      }
-      23.55% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      24.05%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #7C3AED;
-        transform: scale(1);
-      }
-    }
-    #tile_47_3 {
-      transform-origin: 735px 237px;
-      animation: vaporize_tile_47_3 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_47_4 {
-      0%, 27.25% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-      27.45% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      27.95%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-    }
-    #tile_47_4 {
-      transform-origin: 735px 251px;
-      animation: vaporize_tile_47_4 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_48_0 {
-      0%, 31.16% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-      31.36% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      31.86%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-    }
-    #tile_48_0 {
-      transform-origin: 749px 195px;
-      animation: vaporize_tile_48_0 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_48_6 {
-      0%, 35.07% {
-        opacity: 0.95;
-        fill: #A855F7;
-        transform: scale(1);
-      }
-      35.27% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      35.77%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #A855F7;
-        transform: scale(1);
-      }
-    }
-    #tile_48_6 {
-      transform-origin: 749px 279px;
-      animation: vaporize_tile_48_6 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_49_0 {
-      0%, 38.98% {
-        opacity: 0.95;
-        fill: #A855F7;
-        transform: scale(1);
-      }
-      39.18% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      39.68%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #A855F7;
-        transform: scale(1);
-      }
-    }
-    #tile_49_0 {
-      transform-origin: 763px 195px;
-      animation: vaporize_tile_49_0 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_49_1 {
-      0%, 42.89% {
-        opacity: 0.95;
-        fill: #7C3AED;
-        transform: scale(1);
-      }
-      43.09% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      43.59%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #7C3AED;
-        transform: scale(1);
-      }
-    }
-    #tile_49_1 {
-      transform-origin: 763px 209px;
-      animation: vaporize_tile_49_1 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_49_2 {
-      0%, 46.80% {
-        opacity: 0.95;
-        fill: #D946EF;
-        transform: scale(1);
-      }
-      47.00% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      47.50%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #D946EF;
-        transform: scale(1);
-      }
-    }
-    #tile_49_2 {
-      transform-origin: 763px 223px;
-      animation: vaporize_tile_49_2 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_49_3 {
-      0%, 50.71% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-      50.91% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      51.41%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-    }
-    #tile_49_3 {
-      transform-origin: 763px 237px;
-      animation: vaporize_tile_49_3 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_50_0 {
-      0%, 54.62% {
-        opacity: 0.95;
-        fill: #7C3AED;
-        transform: scale(1);
-      }
-      54.82% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      55.32%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #7C3AED;
-        transform: scale(1);
-      }
-    }
-    #tile_50_0 {
-      transform-origin: 777px 195px;
-      animation: vaporize_tile_50_0 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_50_2 {
-      0%, 58.53% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-      58.73% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      59.23%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-    }
-    #tile_50_2 {
-      transform-origin: 777px 223px;
-      animation: vaporize_tile_50_2 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_50_6 {
-      0%, 62.44% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-      62.64% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      63.14%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-    }
-    #tile_50_6 {
-      transform-origin: 777px 279px;
-      animation: vaporize_tile_50_6 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_51_1 {
-      0%, 66.35% {
-        opacity: 0.95;
-        fill: #7C3AED;
-        transform: scale(1);
-      }
-      66.55% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      67.05%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #7C3AED;
-        transform: scale(1);
-      }
-    }
-    #tile_51_1 {
-      transform-origin: 791px 209px;
-      animation: vaporize_tile_51_1 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_51_2 {
-      0%, 70.25% {
-        opacity: 0.95;
-        fill: #A855F7;
-        transform: scale(1);
-      }
-      70.45% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      70.95%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #A855F7;
-        transform: scale(1);
-      }
-    }
-    #tile_51_2 {
-      transform-origin: 791px 223px;
-      animation: vaporize_tile_51_2 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_51_3 {
-      0%, 74.16% {
-        opacity: 0.95;
-        fill: #7C3AED;
-        transform: scale(1);
-      }
-      74.36% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      74.86%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #7C3AED;
-        transform: scale(1);
-      }
-    }
-    #tile_51_3 {
-      transform-origin: 791px 237px;
-      animation: vaporize_tile_51_3 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_51_5 {
-      0%, 78.07% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-      78.27% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      78.77%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-    }
-    #tile_51_5 {
-      transform-origin: 791px 265px;
-      animation: vaporize_tile_51_5 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_52_3 {
-      0%, 81.98% {
-        opacity: 0.95;
-        fill: #D946EF;
-        transform: scale(1);
-      }
-      82.18% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      82.68%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #D946EF;
-        transform: scale(1);
-      }
-    }
-    #tile_52_3 {
-      transform-origin: 805px 237px;
-      animation: vaporize_tile_52_3 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_52_4 {
-      0%, 85.89% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-      86.09% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      86.59%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-    }
-    #tile_52_4 {
-      transform-origin: 805px 251px;
-      animation: vaporize_tile_52_4 16s ease-out infinite;
-    }
-
-    @keyframes vaporize_tile_52_5 {
-      0%, 89.80% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-      90.00% {
-        opacity: 1;
-        fill: #FFFFFF;
-        filter: url(#laser-glow);
-        transform: scale(1.4);
-      }
-      90.50%, 96% {
-        opacity: 0.12;
-        fill: #2E1065;
-        transform: scale(0.85);
-      }
-      98%, 100% {
-        opacity: 0.95;
-        fill: #4C1D95;
-        transform: scale(1);
-      }
-    }
-    #tile_52_5 {
-      transform-origin: 805px 265px;
-      animation: vaporize_tile_52_5 16s ease-out infinite;
+      animation: beaconPulse 2.2s ease-in-out infinite;
     }
   </style>
 
   <!-- Container Box -->
-  <rect x="0" y="0" width="900" height="330" rx="12" fill="url(#bgGrad)" stroke="#2E1065" stroke-width="1.2" />
+  <rect x="0" y="0" width="900" height="215" rx="10" fill="url(#bgGrad)" stroke="#2E1065" stroke-width="1.2" />
 
-  <!-- Background Cyber Mesh -->
-  <g opacity="0.05" stroke="#C084FC" stroke-width="0.8">
-    <line x1="0" y1="50" x2="900" y2="50" />
-    <line x1="0" y1="165" x2="900" y2="165" />
-    <line x1="70" y1="50" x2="70" y2="330" />
-    <line x1="820" y1="50" x2="820" y2="330" />
-    <path d="M0,0 L40,0 M0,0 L0,40 M0,0 L30,30" stroke-width="1.2" />
-    <path d="M900,0 L860,0 M900,0 L900,40 M900,0 L870,30" stroke-width="1.2" />
+  <!-- Subtle Corner Geometry / Web Strands -->
+  <g opacity="0.08" stroke="#C084FC" stroke-width="0.8">
+    <line x1="0" y1="42" x2="900" y2="42" />
+    <path d="M0,0 L35,0 M0,0 L0,35 M0,0 L25,25" stroke-width="1.2" />
+    <path d="M900,0 L865,0 M900,0 L900,35 M900,0 L875,25" stroke-width="1.2" />
   </g>
 
-  <!-- HUD Header Section -->
-  <g transform="translate(24, 28)">
-    <circle cx="8" cy="8" r="4.5" fill="#A855F7" class="pulse-beacon" filter="url(#purple-glow)" />
-    <circle cx="8" cy="8" r="8.5" fill="none" stroke="#A855F7" stroke-width="0.8" opacity="0.4" />
+  <!-- Header Section -->
+  <g transform="translate(24, 22)">
+    <circle cx="8" cy="8" r="4" fill="#A855F7" class="pulse-beacon" filter="url(#purple-glow)" />
+    <circle cx="8" cy="8" r="8" fill="none" stroke="#A855F7" stroke-width="0.8" opacity="0.4" />
 
-    <text x="24" y="12" fill="#F8FAFC" font-size="13" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" letter-spacing="1">
-      PATROL TELEMETRY // ASCENDING DISPATCH RADAR
+    <text x="24" y="12" fill="#F8FAFC" font-size="12.5" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" letter-spacing="1">
+      CONTRIBUTION TELEMETRY // ANNUAL DISPATCH RADAR
     </text>
 
-    <!-- Header Telemetry Tags -->
-    <g transform="translate(555, -2)">
-      <rect x="0" y="0" width="135" height="22" rx="4" fill="#170F2E" stroke="#3B1768" stroke-width="0.8" />
+    <!-- Header Badges -->
+    <g transform="translate(560, -3)">
+      <rect x="0" y="0" width="130" height="22" rx="4" fill="#170F2E" stroke="#3B1768" stroke-width="0.8" />
       <text x="12" y="15" fill="#C084FC" font-size="10.5" font-family="monospace" font-weight="600">⚡ 296 DISPATCHES</text>
 
-      <rect x="145" y="0" width="145" height="22" rx="4" fill="#170F2E" stroke="#A855F7" stroke-width="0.8" />
-      <text x="155" y="15" fill="#A855F7" font-size="10.5" font-family="monospace" font-weight="600">🎯 PEAK: 96 / DAY</text>
+      <rect x="140" y="0" width="145" height="22" rx="4" fill="#170F2E" stroke="#A855F7" stroke-width="0.8" />
+      <text x="150" y="15" fill="#A855F7" font-size="10.5" font-family="monospace" font-weight="600">🎯 PEAK: 96 IN A DAY</text>
     </g>
   </g>
-
-  <!-- Dynamic Web Tracer Line (Fires point-to-point in ascending chronological order) -->
-  <line x1="0" y1="0" x2="0" y2="0" class="web-tracer-line" filter="url(#laser-glow)" />
-
-  <!-- Sept 8 (96-commit) shockwave impact -->
-  <circle cx="763" cy="223" r="2" fill="none" stroke="#D946EF" stroke-width="2" class="shockwave-burst" />
-  <circle cx="763" cy="223" r="2" fill="none" stroke="#FFFFFF" stroke-width="1" class="shockwave-burst" style="animation-delay: 0.1s;" />
 
   <!-- Heatmap Calendar Grid -->
   <g id="heatmap-grid">
-    <text x="72" y="182" fill="#71717A" font-size="10" font-family="monospace">Sep</text>
-    <text x="128" y="182" fill="#71717A" font-size="10" font-family="monospace">Oct</text>
-    <text x="184" y="182" fill="#71717A" font-size="10" font-family="monospace">Nov</text>
-    <text x="240" y="182" fill="#71717A" font-size="10" font-family="monospace">Dec</text>
-    <text x="296" y="182" fill="#71717A" font-size="10" font-family="monospace">Jan</text>
-    <text x="352" y="182" fill="#71717A" font-size="10" font-family="monospace">Feb</text>
-    <text x="408" y="182" fill="#71717A" font-size="10" font-family="monospace">Mar</text>
-    <text x="464" y="182" fill="#71717A" font-size="10" font-family="monospace">Apr</text>
-    <text x="520" y="182" fill="#71717A" font-size="10" font-family="monospace">May</text>
-    <text x="576" y="182" fill="#71717A" font-size="10" font-family="monospace">Jun</text>
-    <text x="632" y="182" fill="#71717A" font-size="10" font-family="monospace">Jul</text>
-    <text x="688" y="182" fill="#71717A" font-size="10" font-family="monospace">Aug</text>
-    <text x="800" y="182" fill="#71717A" font-size="10" font-family="monospace">Sep</text>
-    <text x="54" y="213" fill="#71717A" font-size="9" font-family="monospace" text-anchor="end">Mon</text>
-    <text x="54" y="241" fill="#71717A" font-size="9" font-family="monospace" text-anchor="end">Wed</text>
-    <text x="54" y="269" fill="#71717A" font-size="9" font-family="monospace" text-anchor="end">Fri</text>
-    <rect id="tile_0_0" x="72" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-09-28: 0 commits</title></rect>
-    <rect id="tile_0_1" x="72" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-09-29: 0 commits</title></rect>
-    <rect id="tile_0_2" x="72" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-09-30: 0 commits</title></rect>
-    <rect id="tile_0_3" x="72" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-01: 0 commits</title></rect>
-    <rect id="tile_0_4" x="72" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-02: 0 commits</title></rect>
-    <rect id="tile_0_5" x="72" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-03: 0 commits</title></rect>
-    <rect id="tile_0_6" x="72" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-04: 0 commits</title></rect>
-    <rect id="tile_1_0" x="86" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-05: 0 commits</title></rect>
-    <rect id="tile_1_1" x="86" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-06: 0 commits</title></rect>
-    <rect id="tile_1_2" x="86" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-07: 0 commits</title></rect>
-    <rect id="tile_1_3" x="86" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-08: 0 commits</title></rect>
-    <rect id="tile_1_4" x="86" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-09: 0 commits</title></rect>
-    <rect id="tile_1_5" x="86" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-10: 0 commits</title></rect>
-    <rect id="tile_1_6" x="86" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-11: 0 commits</title></rect>
-    <rect id="tile_2_0" x="100" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-12: 0 commits</title></rect>
-    <rect id="tile_2_1" x="100" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-13: 0 commits</title></rect>
-    <rect id="tile_2_2" x="100" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-14: 0 commits</title></rect>
-    <rect id="tile_2_3" x="100" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-15: 0 commits</title></rect>
-    <rect id="tile_2_4" x="100" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-16: 0 commits</title></rect>
-    <rect id="tile_2_5" x="100" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-17: 0 commits</title></rect>
-    <rect id="tile_2_6" x="100" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-18: 0 commits</title></rect>
-    <rect id="tile_3_0" x="114" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-19: 0 commits</title></rect>
-    <rect id="tile_3_1" x="114" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-20: 0 commits</title></rect>
-    <rect id="tile_3_2" x="114" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-21: 0 commits</title></rect>
-    <rect id="tile_3_3" x="114" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-22: 0 commits</title></rect>
-    <rect id="tile_3_4" x="114" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-23: 0 commits</title></rect>
-    <rect id="tile_3_5" x="114" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-24: 0 commits</title></rect>
-    <rect id="tile_3_6" x="114" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-25: 0 commits</title></rect>
-    <rect id="tile_4_0" x="128" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-26: 0 commits</title></rect>
-    <rect id="tile_4_1" x="128" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-27: 0 commits</title></rect>
-    <rect id="tile_4_2" x="128" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-28: 0 commits</title></rect>
-    <rect id="tile_4_3" x="128" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-29: 0 commits</title></rect>
-    <rect id="tile_4_4" x="128" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-30: 0 commits</title></rect>
-    <rect id="tile_4_5" x="128" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-10-31: 0 commits</title></rect>
-    <rect id="tile_4_6" x="128" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-01: 0 commits</title></rect>
-    <rect id="tile_5_0" x="142" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-02: 0 commits</title></rect>
-    <rect id="tile_5_1" x="142" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-03: 0 commits</title></rect>
-    <rect id="tile_5_2" x="142" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-04: 0 commits</title></rect>
-    <rect id="tile_5_3" x="142" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-05: 0 commits</title></rect>
-    <rect id="tile_5_4" x="142" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-06: 0 commits</title></rect>
-    <rect id="tile_5_5" x="142" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-07: 0 commits</title></rect>
-    <rect id="tile_5_6" x="142" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-08: 0 commits</title></rect>
-    <rect id="tile_6_0" x="156" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-09: 0 commits</title></rect>
-    <rect id="tile_6_1" x="156" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-10: 0 commits</title></rect>
-    <rect id="tile_6_2" x="156" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-11: 0 commits</title></rect>
-    <rect id="tile_6_3" x="156" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-12: 0 commits</title></rect>
-    <rect id="tile_6_4" x="156" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-13: 0 commits</title></rect>
-    <rect id="tile_6_5" x="156" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-14: 0 commits</title></rect>
-    <rect id="tile_6_6" x="156" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-15: 0 commits</title></rect>
-    <rect id="tile_7_0" x="170" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-16: 0 commits</title></rect>
-    <rect id="tile_7_1" x="170" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-17: 0 commits</title></rect>
-    <rect id="tile_7_2" x="170" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-18: 0 commits</title></rect>
-    <rect id="tile_7_3" x="170" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-19: 0 commits</title></rect>
-    <rect id="tile_7_4" x="170" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-20: 0 commits</title></rect>
-    <rect id="tile_7_5" x="170" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-21: 0 commits</title></rect>
-    <rect id="tile_7_6" x="170" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-22: 0 commits</title></rect>
-    <rect id="tile_8_0" x="184" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-23: 0 commits</title></rect>
-    <rect id="tile_8_1" x="184" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-24: 0 commits</title></rect>
-    <rect id="tile_8_2" x="184" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-25: 0 commits</title></rect>
-    <rect id="tile_8_3" x="184" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-26: 0 commits</title></rect>
-    <rect id="tile_8_4" x="184" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-27: 0 commits</title></rect>
-    <rect id="tile_8_5" x="184" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-28: 0 commits</title></rect>
-    <rect id="tile_8_6" x="184" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-29: 0 commits</title></rect>
-    <rect id="tile_9_0" x="198" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-11-30: 0 commits</title></rect>
-    <rect id="tile_9_1" x="198" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-01: 0 commits</title></rect>
-    <rect id="tile_9_2" x="198" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-02: 0 commits</title></rect>
-    <rect id="tile_9_3" x="198" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-03: 0 commits</title></rect>
-    <rect id="tile_9_4" x="198" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-04: 0 commits</title></rect>
-    <rect id="tile_9_5" x="198" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-05: 0 commits</title></rect>
-    <rect id="tile_9_6" x="198" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-06: 0 commits</title></rect>
-    <rect id="tile_10_0" x="212" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-07: 0 commits</title></rect>
-    <rect id="tile_10_1" x="212" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-08: 0 commits</title></rect>
-    <rect id="tile_10_2" x="212" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-09: 0 commits</title></rect>
-    <rect id="tile_10_3" x="212" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-10: 0 commits</title></rect>
-    <rect id="tile_10_4" x="212" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-11: 0 commits</title></rect>
-    <rect id="tile_10_5" x="212" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-12: 0 commits</title></rect>
-    <rect id="tile_10_6" x="212" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-13: 0 commits</title></rect>
-    <rect id="tile_11_0" x="226" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-14: 0 commits</title></rect>
-    <rect id="tile_11_1" x="226" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-15: 0 commits</title></rect>
-    <rect id="tile_11_2" x="226" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-16: 0 commits</title></rect>
-    <rect id="tile_11_3" x="226" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-17: 0 commits</title></rect>
-    <rect id="tile_11_4" x="226" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-18: 0 commits</title></rect>
-    <rect id="tile_11_5" x="226" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-19: 0 commits</title></rect>
-    <rect id="tile_11_6" x="226" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-20: 0 commits</title></rect>
-    <rect id="tile_12_0" x="240" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-21: 0 commits</title></rect>
-    <rect id="tile_12_1" x="240" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-22: 0 commits</title></rect>
-    <rect id="tile_12_2" x="240" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-23: 0 commits</title></rect>
-    <rect id="tile_12_3" x="240" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-24: 0 commits</title></rect>
-    <rect id="tile_12_4" x="240" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-25: 0 commits</title></rect>
-    <rect id="tile_12_5" x="240" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-26: 0 commits</title></rect>
-    <rect id="tile_12_6" x="240" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-27: 0 commits</title></rect>
-    <rect id="tile_13_0" x="254" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-28: 0 commits</title></rect>
-    <rect id="tile_13_1" x="254" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-29: 0 commits</title></rect>
-    <rect id="tile_13_2" x="254" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-30: 0 commits</title></rect>
-    <rect id="tile_13_3" x="254" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2025-12-31: 0 commits</title></rect>
-    <rect id="tile_13_4" x="254" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-01: 0 commits</title></rect>
-    <rect id="tile_13_5" x="254" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-02: 0 commits</title></rect>
-    <rect id="tile_13_6" x="254" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-03: 0 commits</title></rect>
-    <rect id="tile_14_0" x="268" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-04: 0 commits</title></rect>
-    <rect id="tile_14_1" x="268" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-05: 0 commits</title></rect>
-    <rect id="tile_14_2" x="268" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-06: 0 commits</title></rect>
-    <rect id="tile_14_3" x="268" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-07: 0 commits</title></rect>
-    <rect id="tile_14_4" x="268" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-08: 0 commits</title></rect>
-    <rect id="tile_14_5" x="268" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-09: 0 commits</title></rect>
-    <rect id="tile_14_6" x="268" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-10: 0 commits</title></rect>
-    <rect id="tile_15_0" x="282" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-11: 0 commits</title></rect>
-    <rect id="tile_15_1" x="282" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-12: 0 commits</title></rect>
-    <rect id="tile_15_2" x="282" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-13: 0 commits</title></rect>
-    <rect id="tile_15_3" x="282" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-14: 0 commits</title></rect>
-    <rect id="tile_15_4" x="282" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-15: 0 commits</title></rect>
-    <rect id="tile_15_5" x="282" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-16: 0 commits</title></rect>
-    <rect id="tile_15_6" x="282" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-17: 0 commits</title></rect>
-    <rect id="tile_16_0" x="296" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-18: 0 commits</title></rect>
-    <rect id="tile_16_1" x="296" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-19: 0 commits</title></rect>
-    <rect id="tile_16_2" x="296" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-20: 0 commits</title></rect>
-    <rect id="tile_16_3" x="296" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-21: 0 commits</title></rect>
-    <rect id="tile_16_4" x="296" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-22: 0 commits</title></rect>
-    <rect id="tile_16_5" x="296" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-23: 0 commits</title></rect>
-    <rect id="tile_16_6" x="296" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-24: 0 commits</title></rect>
-    <rect id="tile_17_0" x="310" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-25: 0 commits</title></rect>
-    <rect id="tile_17_1" x="310" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-26: 0 commits</title></rect>
-    <rect id="tile_17_2" x="310" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-27: 0 commits</title></rect>
-    <rect id="tile_17_3" x="310" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-28: 0 commits</title></rect>
-    <rect id="tile_17_4" x="310" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-29: 0 commits</title></rect>
-    <rect id="tile_17_5" x="310" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-30: 0 commits</title></rect>
-    <rect id="tile_17_6" x="310" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-01-31: 0 commits</title></rect>
-    <rect id="tile_18_0" x="324" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-01: 0 commits</title></rect>
-    <rect id="tile_18_1" x="324" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-02: 0 commits</title></rect>
-    <rect id="tile_18_2" x="324" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-03: 0 commits</title></rect>
-    <rect id="tile_18_3" x="324" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-04: 0 commits</title></rect>
-    <rect id="tile_18_4" x="324" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-05: 0 commits</title></rect>
-    <rect id="tile_18_5" x="324" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-06: 0 commits</title></rect>
-    <rect id="tile_18_6" x="324" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-07: 0 commits</title></rect>
-    <rect id="tile_19_0" x="338" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-08: 0 commits</title></rect>
-    <rect id="tile_19_1" x="338" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-09: 0 commits</title></rect>
-    <rect id="tile_19_2" x="338" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-10: 0 commits</title></rect>
-    <rect id="tile_19_3" x="338" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-11: 0 commits</title></rect>
-    <rect id="tile_19_4" x="338" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-12: 0 commits</title></rect>
-    <rect id="tile_19_5" x="338" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-13: 0 commits</title></rect>
-    <rect id="tile_19_6" x="338" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-14: 0 commits</title></rect>
-    <rect id="tile_20_0" x="352" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-15: 0 commits</title></rect>
-    <rect id="tile_20_1" x="352" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-16: 0 commits</title></rect>
-    <rect id="tile_20_2" x="352" y="218" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-02-17: 5 commits</title></rect>
-    <rect id="tile_20_3" x="352" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-18: 0 commits</title></rect>
-    <rect id="tile_20_4" x="352" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-19: 0 commits</title></rect>
-    <rect id="tile_20_5" x="352" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-20: 0 commits</title></rect>
-    <rect id="tile_20_6" x="352" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-21: 0 commits</title></rect>
-    <rect id="tile_21_0" x="366" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-22: 0 commits</title></rect>
-    <rect id="tile_21_1" x="366" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-23: 0 commits</title></rect>
-    <rect id="tile_21_2" x="366" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-24: 0 commits</title></rect>
-    <rect id="tile_21_3" x="366" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-25: 0 commits</title></rect>
-    <rect id="tile_21_4" x="366" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-26: 0 commits</title></rect>
-    <rect id="tile_21_5" x="366" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-27: 0 commits</title></rect>
-    <rect id="tile_21_6" x="366" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-02-28: 0 commits</title></rect>
-    <rect id="tile_22_0" x="380" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-01: 0 commits</title></rect>
-    <rect id="tile_22_1" x="380" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-02: 0 commits</title></rect>
-    <rect id="tile_22_2" x="380" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-03: 0 commits</title></rect>
-    <rect id="tile_22_3" x="380" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-04: 0 commits</title></rect>
-    <rect id="tile_22_4" x="380" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-05: 0 commits</title></rect>
-    <rect id="tile_22_5" x="380" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-06: 0 commits</title></rect>
-    <rect id="tile_22_6" x="380" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-07: 0 commits</title></rect>
-    <rect id="tile_23_0" x="394" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-08: 0 commits</title></rect>
-    <rect id="tile_23_1" x="394" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-09: 0 commits</title></rect>
-    <rect id="tile_23_2" x="394" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-10: 0 commits</title></rect>
-    <rect id="tile_23_3" x="394" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-11: 0 commits</title></rect>
-    <rect id="tile_23_4" x="394" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-12: 0 commits</title></rect>
-    <rect id="tile_23_5" x="394" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-13: 0 commits</title></rect>
-    <rect id="tile_23_6" x="394" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-14: 0 commits</title></rect>
-    <rect id="tile_24_0" x="408" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-15: 0 commits</title></rect>
-    <rect id="tile_24_1" x="408" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-16: 0 commits</title></rect>
-    <rect id="tile_24_2" x="408" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-17: 0 commits</title></rect>
-    <rect id="tile_24_3" x="408" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-18: 0 commits</title></rect>
-    <rect id="tile_24_4" x="408" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-19: 0 commits</title></rect>
-    <rect id="tile_24_5" x="408" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-20: 0 commits</title></rect>
-    <rect id="tile_24_6" x="408" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-21: 0 commits</title></rect>
-    <rect id="tile_25_0" x="422" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-22: 0 commits</title></rect>
-    <rect id="tile_25_1" x="422" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-23: 0 commits</title></rect>
-    <rect id="tile_25_2" x="422" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-24: 0 commits</title></rect>
-    <rect id="tile_25_3" x="422" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-25: 0 commits</title></rect>
-    <rect id="tile_25_4" x="422" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-26: 0 commits</title></rect>
-    <rect id="tile_25_5" x="422" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-27: 0 commits</title></rect>
-    <rect id="tile_25_6" x="422" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-28: 0 commits</title></rect>
-    <rect id="tile_26_0" x="436" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-29: 0 commits</title></rect>
-    <rect id="tile_26_1" x="436" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-30: 0 commits</title></rect>
-    <rect id="tile_26_2" x="436" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-03-31: 0 commits</title></rect>
-    <rect id="tile_26_3" x="436" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-01: 0 commits</title></rect>
-    <rect id="tile_26_4" x="436" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-02: 0 commits</title></rect>
-    <rect id="tile_26_5" x="436" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-03: 0 commits</title></rect>
-    <rect id="tile_26_6" x="436" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-04: 0 commits</title></rect>
-    <rect id="tile_27_0" x="450" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-05: 0 commits</title></rect>
-    <rect id="tile_27_1" x="450" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-06: 0 commits</title></rect>
-    <rect id="tile_27_2" x="450" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-07: 0 commits</title></rect>
-    <rect id="tile_27_3" x="450" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-08: 0 commits</title></rect>
-    <rect id="tile_27_4" x="450" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-09: 0 commits</title></rect>
-    <rect id="tile_27_5" x="450" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-10: 0 commits</title></rect>
-    <rect id="tile_27_6" x="450" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-11: 0 commits</title></rect>
-    <rect id="tile_28_0" x="464" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-12: 0 commits</title></rect>
-    <rect id="tile_28_1" x="464" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-13: 0 commits</title></rect>
-    <rect id="tile_28_2" x="464" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-14: 0 commits</title></rect>
-    <rect id="tile_28_3" x="464" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-15: 0 commits</title></rect>
-    <rect id="tile_28_4" x="464" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-16: 0 commits</title></rect>
-    <rect id="tile_28_5" x="464" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-17: 0 commits</title></rect>
-    <rect id="tile_28_6" x="464" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-18: 0 commits</title></rect>
-    <rect id="tile_29_0" x="478" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-19: 0 commits</title></rect>
-    <rect id="tile_29_1" x="478" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-20: 0 commits</title></rect>
-    <rect id="tile_29_2" x="478" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-21: 0 commits</title></rect>
-    <rect id="tile_29_3" x="478" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-22: 0 commits</title></rect>
-    <rect id="tile_29_4" x="478" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-23: 0 commits</title></rect>
-    <rect id="tile_29_5" x="478" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-24: 0 commits</title></rect>
-    <rect id="tile_29_6" x="478" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-25: 0 commits</title></rect>
-    <rect id="tile_30_0" x="492" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-26: 0 commits</title></rect>
-    <rect id="tile_30_1" x="492" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-27: 0 commits</title></rect>
-    <rect id="tile_30_2" x="492" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-28: 0 commits</title></rect>
-    <rect id="tile_30_3" x="492" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-29: 0 commits</title></rect>
-    <rect id="tile_30_4" x="492" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-04-30: 0 commits</title></rect>
-    <rect id="tile_30_5" x="492" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-01: 0 commits</title></rect>
-    <rect id="tile_30_6" x="492" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-02: 0 commits</title></rect>
-    <rect id="tile_31_0" x="506" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-03: 0 commits</title></rect>
-    <rect id="tile_31_1" x="506" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-04: 0 commits</title></rect>
-    <rect id="tile_31_2" x="506" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-05: 0 commits</title></rect>
-    <rect id="tile_31_3" x="506" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-06: 0 commits</title></rect>
-    <rect id="tile_31_4" x="506" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-07: 0 commits</title></rect>
-    <rect id="tile_31_5" x="506" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-08: 0 commits</title></rect>
-    <rect id="tile_31_6" x="506" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-09: 0 commits</title></rect>
-    <rect id="tile_32_0" x="520" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-10: 0 commits</title></rect>
-    <rect id="tile_32_1" x="520" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-11: 0 commits</title></rect>
-    <rect id="tile_32_2" x="520" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-12: 0 commits</title></rect>
-    <rect id="tile_32_3" x="520" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-13: 0 commits</title></rect>
-    <rect id="tile_32_4" x="520" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-14: 0 commits</title></rect>
-    <rect id="tile_32_5" x="520" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-15: 0 commits</title></rect>
-    <rect id="tile_32_6" x="520" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-16: 0 commits</title></rect>
-    <rect id="tile_33_0" x="534" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-17: 0 commits</title></rect>
-    <rect id="tile_33_1" x="534" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-18: 0 commits</title></rect>
-    <rect id="tile_33_2" x="534" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-19: 0 commits</title></rect>
-    <rect id="tile_33_3" x="534" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-20: 0 commits</title></rect>
-    <rect id="tile_33_4" x="534" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-21: 0 commits</title></rect>
-    <rect id="tile_33_5" x="534" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-22: 0 commits</title></rect>
-    <rect id="tile_33_6" x="534" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-23: 0 commits</title></rect>
-    <rect id="tile_34_0" x="548" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-24: 0 commits</title></rect>
-    <rect id="tile_34_1" x="548" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-25: 0 commits</title></rect>
-    <rect id="tile_34_2" x="548" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-26: 0 commits</title></rect>
-    <rect id="tile_34_3" x="548" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-27: 0 commits</title></rect>
-    <rect id="tile_34_4" x="548" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-28: 0 commits</title></rect>
-    <rect id="tile_34_5" x="548" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-29: 0 commits</title></rect>
-    <rect id="tile_34_6" x="548" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-30: 0 commits</title></rect>
-    <rect id="tile_35_0" x="562" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-05-31: 0 commits</title></rect>
-    <rect id="tile_35_1" x="562" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-01: 0 commits</title></rect>
-    <rect id="tile_35_2" x="562" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-02: 0 commits</title></rect>
-    <rect id="tile_35_3" x="562" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-03: 0 commits</title></rect>
-    <rect id="tile_35_4" x="562" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-04: 0 commits</title></rect>
-    <rect id="tile_35_5" x="562" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-05: 0 commits</title></rect>
-    <rect id="tile_35_6" x="562" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-06: 0 commits</title></rect>
-    <rect id="tile_36_0" x="576" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-07: 0 commits</title></rect>
-    <rect id="tile_36_1" x="576" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-08: 0 commits</title></rect>
-    <rect id="tile_36_2" x="576" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-09: 0 commits</title></rect>
-    <rect id="tile_36_3" x="576" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-10: 0 commits</title></rect>
-    <rect id="tile_36_4" x="576" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-11: 0 commits</title></rect>
-    <rect id="tile_36_5" x="576" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-12: 0 commits</title></rect>
-    <rect id="tile_36_6" x="576" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-13: 0 commits</title></rect>
-    <rect id="tile_37_0" x="590" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-14: 0 commits</title></rect>
-    <rect id="tile_37_1" x="590" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-15: 0 commits</title></rect>
-    <rect id="tile_37_2" x="590" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-16: 0 commits</title></rect>
-    <rect id="tile_37_3" x="590" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-17: 0 commits</title></rect>
-    <rect id="tile_37_4" x="590" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-18: 0 commits</title></rect>
-    <rect id="tile_37_5" x="590" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-19: 0 commits</title></rect>
-    <rect id="tile_37_6" x="590" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-20: 0 commits</title></rect>
-    <rect id="tile_38_0" x="604" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-21: 0 commits</title></rect>
-    <rect id="tile_38_1" x="604" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-22: 0 commits</title></rect>
-    <rect id="tile_38_2" x="604" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-23: 0 commits</title></rect>
-    <rect id="tile_38_3" x="604" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-24: 0 commits</title></rect>
-    <rect id="tile_38_4" x="604" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-25: 0 commits</title></rect>
-    <rect id="tile_38_5" x="604" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-26: 0 commits</title></rect>
-    <rect id="tile_38_6" x="604" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-27: 0 commits</title></rect>
-    <rect id="tile_39_0" x="618" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-28: 0 commits</title></rect>
-    <rect id="tile_39_1" x="618" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-29: 0 commits</title></rect>
-    <rect id="tile_39_2" x="618" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-06-30: 0 commits</title></rect>
-    <rect id="tile_39_3" x="618" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-01: 0 commits</title></rect>
-    <rect id="tile_39_4" x="618" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-02: 0 commits</title></rect>
-    <rect id="tile_39_5" x="618" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-03: 0 commits</title></rect>
-    <rect id="tile_39_6" x="618" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-04: 0 commits</title></rect>
-    <rect id="tile_40_0" x="632" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-05: 0 commits</title></rect>
-    <rect id="tile_40_1" x="632" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-06: 0 commits</title></rect>
-    <rect id="tile_40_2" x="632" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-07: 0 commits</title></rect>
-    <rect id="tile_40_3" x="632" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-08: 0 commits</title></rect>
-    <rect id="tile_40_4" x="632" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-09: 0 commits</title></rect>
-    <rect id="tile_40_5" x="632" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-10: 0 commits</title></rect>
-    <rect id="tile_40_6" x="632" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-11: 0 commits</title></rect>
-    <rect id="tile_41_0" x="646" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-12: 0 commits</title></rect>
-    <rect id="tile_41_1" x="646" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-13: 0 commits</title></rect>
-    <rect id="tile_41_2" x="646" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-14: 0 commits</title></rect>
-    <rect id="tile_41_3" x="646" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-15: 0 commits</title></rect>
-    <rect id="tile_41_4" x="646" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-16: 0 commits</title></rect>
-    <rect id="tile_41_5" x="646" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-17: 0 commits</title></rect>
-    <rect id="tile_41_6" x="646" y="274" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-07-18: 3 commits</title></rect>
-    <rect id="tile_42_0" x="660" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-19: 0 commits</title></rect>
-    <rect id="tile_42_1" x="660" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-20: 0 commits</title></rect>
-    <rect id="tile_42_2" x="660" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-21: 0 commits</title></rect>
-    <rect id="tile_42_3" x="660" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-22: 0 commits</title></rect>
-    <rect id="tile_42_4" x="660" y="246" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-07-23: 7 commits</title></rect>
-    <rect id="tile_42_5" x="660" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-24: 0 commits</title></rect>
-    <rect id="tile_42_6" x="660" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-25: 0 commits</title></rect>
-    <rect id="tile_43_0" x="674" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-26: 0 commits</title></rect>
-    <rect id="tile_43_1" x="674" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-27: 0 commits</title></rect>
-    <rect id="tile_43_2" x="674" y="218" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-07-28: 1 commits</title></rect>
-    <rect id="tile_43_3" x="674" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-29: 0 commits</title></rect>
-    <rect id="tile_43_4" x="674" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-30: 0 commits</title></rect>
-    <rect id="tile_43_5" x="674" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-07-31: 0 commits</title></rect>
-    <rect id="tile_43_6" x="674" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-01: 0 commits</title></rect>
-    <rect id="tile_44_0" x="688" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-02: 0 commits</title></rect>
-    <rect id="tile_44_1" x="688" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-03: 0 commits</title></rect>
-    <rect id="tile_44_2" x="688" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-04: 0 commits</title></rect>
-    <rect id="tile_44_3" x="688" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-05: 0 commits</title></rect>
-    <rect id="tile_44_4" x="688" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-06: 0 commits</title></rect>
-    <rect id="tile_44_5" x="688" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-07: 0 commits</title></rect>
-    <rect id="tile_44_6" x="688" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-08: 0 commits</title></rect>
-    <rect id="tile_45_0" x="702" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-09: 0 commits</title></rect>
-    <rect id="tile_45_1" x="702" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-10: 0 commits</title></rect>
-    <rect id="tile_45_2" x="702" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-11: 0 commits</title></rect>
-    <rect id="tile_45_3" x="702" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-12: 0 commits</title></rect>
-    <rect id="tile_45_4" x="702" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-13: 0 commits</title></rect>
-    <rect id="tile_45_5" x="702" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-14: 0 commits</title></rect>
-    <rect id="tile_45_6" x="702" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-15: 0 commits</title></rect>
-    <rect id="tile_46_0" x="716" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-16: 0 commits</title></rect>
-    <rect id="tile_46_1" x="716" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-17: 0 commits</title></rect>
-    <rect id="tile_46_2" x="716" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-18: 0 commits</title></rect>
-    <rect id="tile_46_3" x="716" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-19: 0 commits</title></rect>
-    <rect id="tile_46_4" x="716" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-20: 0 commits</title></rect>
-    <rect id="tile_46_5" x="716" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-21: 0 commits</title></rect>
-    <rect id="tile_46_6" x="716" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-22: 0 commits</title></rect>
-    <rect id="tile_47_0" x="730" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-23: 0 commits</title></rect>
-    <rect id="tile_47_1" x="730" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-24: 0 commits</title></rect>
-    <rect id="tile_47_2" x="730" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-25: 0 commits</title></rect>
-    <rect id="tile_47_3" x="730" y="232" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-08-26: 5 commits</title></rect>
-    <rect id="tile_47_4" x="730" y="246" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-08-27: 1 commits</title></rect>
-    <rect id="tile_47_5" x="730" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-28: 0 commits</title></rect>
-    <rect id="tile_47_6" x="730" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-29: 0 commits</title></rect>
-    <rect id="tile_48_0" x="744" y="190" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-08-30: 1 commits</title></rect>
-    <rect id="tile_48_1" x="744" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-08-31: 0 commits</title></rect>
-    <rect id="tile_48_2" x="744" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-01: 0 commits</title></rect>
-    <rect id="tile_48_3" x="744" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-02: 0 commits</title></rect>
-    <rect id="tile_48_4" x="744" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-03: 0 commits</title></rect>
-    <rect id="tile_48_5" x="744" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-04: 0 commits</title></rect>
-    <rect id="tile_48_6" x="744" y="274" width="11" height="11" rx="2.5" fill="#A855F7" opacity="0.95" stroke="#C084FC" stroke-width="0.8"><title>2026-09-05: 28 commits</title></rect>
-    <rect id="tile_49_0" x="758" y="190" width="11" height="11" rx="2.5" fill="#A855F7" opacity="0.95" stroke="#C084FC" stroke-width="0.8"><title>2026-09-06: 34 commits</title></rect>
-    <rect id="tile_49_1" x="758" y="204" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-09-07: 13 commits</title></rect>
-    <rect id="tile_49_2" x="758" y="218" width="11" height="11" rx="2.5" fill="#D946EF" opacity="0.95" stroke="#F472B6" stroke-width="1.2"><title>2026-09-08: 96 commits</title></rect>
-    <rect id="tile_49_3" x="758" y="232" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-09-09: 1 commits</title></rect>
-    <rect id="tile_49_4" x="758" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-10: 0 commits</title></rect>
-    <rect id="tile_49_5" x="758" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-11: 0 commits</title></rect>
-    <rect id="tile_49_6" x="758" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-12: 0 commits</title></rect>
-    <rect id="tile_50_0" x="772" y="190" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-09-13: 5 commits</title></rect>
-    <rect id="tile_50_1" x="772" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-14: 0 commits</title></rect>
-    <rect id="tile_50_2" x="772" y="218" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-09-15: 4 commits</title></rect>
-    <rect id="tile_50_3" x="772" y="232" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-16: 0 commits</title></rect>
-    <rect id="tile_50_4" x="772" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-17: 0 commits</title></rect>
-    <rect id="tile_50_5" x="772" y="260" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-18: 0 commits</title></rect>
-    <rect id="tile_50_6" x="772" y="274" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-09-19: 2 commits</title></rect>
-    <rect id="tile_51_0" x="786" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-20: 0 commits</title></rect>
-    <rect id="tile_51_1" x="786" y="204" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-09-21: 13 commits</title></rect>
-    <rect id="tile_51_2" x="786" y="218" width="11" height="11" rx="2.5" fill="#A855F7" opacity="0.95"><title>2026-09-22: 17 commits</title></rect>
-    <rect id="tile_51_3" x="786" y="232" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-09-23: 9 commits</title></rect>
-    <rect id="tile_51_4" x="786" y="246" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-24: 0 commits</title></rect>
-    <rect id="tile_51_5" x="786" y="260" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-09-25: 3 commits</title></rect>
-    <rect id="tile_51_6" x="786" y="274" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-26: 0 commits</title></rect>
-    <rect id="tile_52_0" x="800" y="190" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-27: 0 commits</title></rect>
-    <rect id="tile_52_1" x="800" y="204" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-28: 0 commits</title></rect>
-    <rect id="tile_52_2" x="800" y="218" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.4"><title>2026-09-29: 0 commits</title></rect>
-    <rect id="tile_52_3" x="800" y="232" width="11" height="11" rx="2.5" fill="#D946EF" opacity="0.95" stroke="#F472B6" stroke-width="1.2"><title>2026-09-30: 44 commits</title></rect>
-    <rect id="tile_52_4" x="800" y="246" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-10-01: 1 commits</title></rect>
-    <rect id="tile_52_5" x="800" y="260" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-10-02: 3 commits</title></rect>
+    <text x="72" y="67" fill="#71717A" font-size="10" font-family="monospace">Sep</text>
+    <text x="128" y="67" fill="#71717A" font-size="10" font-family="monospace">Oct</text>
+    <text x="184" y="67" fill="#71717A" font-size="10" font-family="monospace">Nov</text>
+    <text x="240" y="67" fill="#71717A" font-size="10" font-family="monospace">Dec</text>
+    <text x="296" y="67" fill="#71717A" font-size="10" font-family="monospace">Jan</text>
+    <text x="352" y="67" fill="#71717A" font-size="10" font-family="monospace">Feb</text>
+    <text x="408" y="67" fill="#71717A" font-size="10" font-family="monospace">Mar</text>
+    <text x="464" y="67" fill="#71717A" font-size="10" font-family="monospace">Apr</text>
+    <text x="520" y="67" fill="#71717A" font-size="10" font-family="monospace">May</text>
+    <text x="576" y="67" fill="#71717A" font-size="10" font-family="monospace">Jun</text>
+    <text x="632" y="67" fill="#71717A" font-size="10" font-family="monospace">Jul</text>
+    <text x="688" y="67" fill="#71717A" font-size="10" font-family="monospace">Aug</text>
+    <text x="800" y="67" fill="#71717A" font-size="10" font-family="monospace">Sep</text>
+    <text x="54" y="98" fill="#71717A" font-size="9" font-family="monospace" text-anchor="end">Mon</text>
+    <text x="54" y="126" fill="#71717A" font-size="9" font-family="monospace" text-anchor="end">Wed</text>
+    <text x="54" y="154" fill="#71717A" font-size="9" font-family="monospace" text-anchor="end">Fri</text>
+    <rect x="72" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-09-28: 0 contributions</title></rect>
+    <rect x="72" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-09-29: 0 contributions</title></rect>
+    <rect x="72" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-09-30: 0 contributions</title></rect>
+    <rect x="72" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-01: 0 contributions</title></rect>
+    <rect x="72" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-02: 0 contributions</title></rect>
+    <rect x="72" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-03: 0 contributions</title></rect>
+    <rect x="72" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-04: 0 contributions</title></rect>
+    <rect x="86" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-05: 0 contributions</title></rect>
+    <rect x="86" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-06: 0 contributions</title></rect>
+    <rect x="86" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-07: 0 contributions</title></rect>
+    <rect x="86" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-08: 0 contributions</title></rect>
+    <rect x="86" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-09: 0 contributions</title></rect>
+    <rect x="86" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-10: 0 contributions</title></rect>
+    <rect x="86" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-11: 0 contributions</title></rect>
+    <rect x="100" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-12: 0 contributions</title></rect>
+    <rect x="100" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-13: 0 contributions</title></rect>
+    <rect x="100" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-14: 0 contributions</title></rect>
+    <rect x="100" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-15: 0 contributions</title></rect>
+    <rect x="100" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-16: 0 contributions</title></rect>
+    <rect x="100" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-17: 0 contributions</title></rect>
+    <rect x="100" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-18: 0 contributions</title></rect>
+    <rect x="114" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-19: 0 contributions</title></rect>
+    <rect x="114" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-20: 0 contributions</title></rect>
+    <rect x="114" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-21: 0 contributions</title></rect>
+    <rect x="114" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-22: 0 contributions</title></rect>
+    <rect x="114" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-23: 0 contributions</title></rect>
+    <rect x="114" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-24: 0 contributions</title></rect>
+    <rect x="114" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-25: 0 contributions</title></rect>
+    <rect x="128" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-26: 0 contributions</title></rect>
+    <rect x="128" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-27: 0 contributions</title></rect>
+    <rect x="128" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-28: 0 contributions</title></rect>
+    <rect x="128" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-29: 0 contributions</title></rect>
+    <rect x="128" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-30: 0 contributions</title></rect>
+    <rect x="128" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-10-31: 0 contributions</title></rect>
+    <rect x="128" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-01: 0 contributions</title></rect>
+    <rect x="142" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-02: 0 contributions</title></rect>
+    <rect x="142" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-03: 0 contributions</title></rect>
+    <rect x="142" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-04: 0 contributions</title></rect>
+    <rect x="142" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-05: 0 contributions</title></rect>
+    <rect x="142" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-06: 0 contributions</title></rect>
+    <rect x="142" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-07: 0 contributions</title></rect>
+    <rect x="142" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-08: 0 contributions</title></rect>
+    <rect x="156" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-09: 0 contributions</title></rect>
+    <rect x="156" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-10: 0 contributions</title></rect>
+    <rect x="156" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-11: 0 contributions</title></rect>
+    <rect x="156" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-12: 0 contributions</title></rect>
+    <rect x="156" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-13: 0 contributions</title></rect>
+    <rect x="156" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-14: 0 contributions</title></rect>
+    <rect x="156" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-15: 0 contributions</title></rect>
+    <rect x="170" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-16: 0 contributions</title></rect>
+    <rect x="170" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-17: 0 contributions</title></rect>
+    <rect x="170" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-18: 0 contributions</title></rect>
+    <rect x="170" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-19: 0 contributions</title></rect>
+    <rect x="170" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-20: 0 contributions</title></rect>
+    <rect x="170" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-21: 0 contributions</title></rect>
+    <rect x="170" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-22: 0 contributions</title></rect>
+    <rect x="184" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-23: 0 contributions</title></rect>
+    <rect x="184" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-24: 0 contributions</title></rect>
+    <rect x="184" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-25: 0 contributions</title></rect>
+    <rect x="184" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-26: 0 contributions</title></rect>
+    <rect x="184" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-27: 0 contributions</title></rect>
+    <rect x="184" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-28: 0 contributions</title></rect>
+    <rect x="184" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-29: 0 contributions</title></rect>
+    <rect x="198" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-11-30: 0 contributions</title></rect>
+    <rect x="198" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-01: 0 contributions</title></rect>
+    <rect x="198" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-02: 0 contributions</title></rect>
+    <rect x="198" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-03: 0 contributions</title></rect>
+    <rect x="198" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-04: 0 contributions</title></rect>
+    <rect x="198" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-05: 0 contributions</title></rect>
+    <rect x="198" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-06: 0 contributions</title></rect>
+    <rect x="212" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-07: 0 contributions</title></rect>
+    <rect x="212" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-08: 0 contributions</title></rect>
+    <rect x="212" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-09: 0 contributions</title></rect>
+    <rect x="212" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-10: 0 contributions</title></rect>
+    <rect x="212" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-11: 0 contributions</title></rect>
+    <rect x="212" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-12: 0 contributions</title></rect>
+    <rect x="212" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-13: 0 contributions</title></rect>
+    <rect x="226" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-14: 0 contributions</title></rect>
+    <rect x="226" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-15: 0 contributions</title></rect>
+    <rect x="226" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-16: 0 contributions</title></rect>
+    <rect x="226" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-17: 0 contributions</title></rect>
+    <rect x="226" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-18: 0 contributions</title></rect>
+    <rect x="226" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-19: 0 contributions</title></rect>
+    <rect x="226" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-20: 0 contributions</title></rect>
+    <rect x="240" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-21: 0 contributions</title></rect>
+    <rect x="240" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-22: 0 contributions</title></rect>
+    <rect x="240" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-23: 0 contributions</title></rect>
+    <rect x="240" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-24: 0 contributions</title></rect>
+    <rect x="240" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-25: 0 contributions</title></rect>
+    <rect x="240" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-26: 0 contributions</title></rect>
+    <rect x="240" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-27: 0 contributions</title></rect>
+    <rect x="254" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-28: 0 contributions</title></rect>
+    <rect x="254" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-29: 0 contributions</title></rect>
+    <rect x="254" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-30: 0 contributions</title></rect>
+    <rect x="254" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2025-12-31: 0 contributions</title></rect>
+    <rect x="254" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-01: 0 contributions</title></rect>
+    <rect x="254" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-02: 0 contributions</title></rect>
+    <rect x="254" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-03: 0 contributions</title></rect>
+    <rect x="268" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-04: 0 contributions</title></rect>
+    <rect x="268" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-05: 0 contributions</title></rect>
+    <rect x="268" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-06: 0 contributions</title></rect>
+    <rect x="268" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-07: 0 contributions</title></rect>
+    <rect x="268" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-08: 0 contributions</title></rect>
+    <rect x="268" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-09: 0 contributions</title></rect>
+    <rect x="268" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-10: 0 contributions</title></rect>
+    <rect x="282" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-11: 0 contributions</title></rect>
+    <rect x="282" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-12: 0 contributions</title></rect>
+    <rect x="282" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-13: 0 contributions</title></rect>
+    <rect x="282" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-14: 0 contributions</title></rect>
+    <rect x="282" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-15: 0 contributions</title></rect>
+    <rect x="282" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-16: 0 contributions</title></rect>
+    <rect x="282" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-17: 0 contributions</title></rect>
+    <rect x="296" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-18: 0 contributions</title></rect>
+    <rect x="296" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-19: 0 contributions</title></rect>
+    <rect x="296" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-20: 0 contributions</title></rect>
+    <rect x="296" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-21: 0 contributions</title></rect>
+    <rect x="296" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-22: 0 contributions</title></rect>
+    <rect x="296" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-23: 0 contributions</title></rect>
+    <rect x="296" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-24: 0 contributions</title></rect>
+    <rect x="310" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-25: 0 contributions</title></rect>
+    <rect x="310" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-26: 0 contributions</title></rect>
+    <rect x="310" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-27: 0 contributions</title></rect>
+    <rect x="310" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-28: 0 contributions</title></rect>
+    <rect x="310" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-29: 0 contributions</title></rect>
+    <rect x="310" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-30: 0 contributions</title></rect>
+    <rect x="310" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-01-31: 0 contributions</title></rect>
+    <rect x="324" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-01: 0 contributions</title></rect>
+    <rect x="324" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-02: 0 contributions</title></rect>
+    <rect x="324" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-03: 0 contributions</title></rect>
+    <rect x="324" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-04: 0 contributions</title></rect>
+    <rect x="324" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-05: 0 contributions</title></rect>
+    <rect x="324" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-06: 0 contributions</title></rect>
+    <rect x="324" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-07: 0 contributions</title></rect>
+    <rect x="338" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-08: 0 contributions</title></rect>
+    <rect x="338" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-09: 0 contributions</title></rect>
+    <rect x="338" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-10: 0 contributions</title></rect>
+    <rect x="338" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-11: 0 contributions</title></rect>
+    <rect x="338" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-12: 0 contributions</title></rect>
+    <rect x="338" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-13: 0 contributions</title></rect>
+    <rect x="338" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-14: 0 contributions</title></rect>
+    <rect x="352" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-15: 0 contributions</title></rect>
+    <rect x="352" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-16: 0 contributions</title></rect>
+    <rect x="352" y="103" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-02-17: 5 contributions</title></rect>
+    <rect x="352" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-18: 0 contributions</title></rect>
+    <rect x="352" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-19: 0 contributions</title></rect>
+    <rect x="352" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-20: 0 contributions</title></rect>
+    <rect x="352" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-21: 0 contributions</title></rect>
+    <rect x="366" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-22: 0 contributions</title></rect>
+    <rect x="366" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-23: 0 contributions</title></rect>
+    <rect x="366" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-24: 0 contributions</title></rect>
+    <rect x="366" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-25: 0 contributions</title></rect>
+    <rect x="366" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-26: 0 contributions</title></rect>
+    <rect x="366" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-27: 0 contributions</title></rect>
+    <rect x="366" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-02-28: 0 contributions</title></rect>
+    <rect x="380" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-01: 0 contributions</title></rect>
+    <rect x="380" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-02: 0 contributions</title></rect>
+    <rect x="380" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-03: 0 contributions</title></rect>
+    <rect x="380" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-04: 0 contributions</title></rect>
+    <rect x="380" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-05: 0 contributions</title></rect>
+    <rect x="380" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-06: 0 contributions</title></rect>
+    <rect x="380" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-07: 0 contributions</title></rect>
+    <rect x="394" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-08: 0 contributions</title></rect>
+    <rect x="394" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-09: 0 contributions</title></rect>
+    <rect x="394" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-10: 0 contributions</title></rect>
+    <rect x="394" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-11: 0 contributions</title></rect>
+    <rect x="394" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-12: 0 contributions</title></rect>
+    <rect x="394" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-13: 0 contributions</title></rect>
+    <rect x="394" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-14: 0 contributions</title></rect>
+    <rect x="408" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-15: 0 contributions</title></rect>
+    <rect x="408" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-16: 0 contributions</title></rect>
+    <rect x="408" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-17: 0 contributions</title></rect>
+    <rect x="408" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-18: 0 contributions</title></rect>
+    <rect x="408" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-19: 0 contributions</title></rect>
+    <rect x="408" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-20: 0 contributions</title></rect>
+    <rect x="408" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-21: 0 contributions</title></rect>
+    <rect x="422" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-22: 0 contributions</title></rect>
+    <rect x="422" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-23: 0 contributions</title></rect>
+    <rect x="422" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-24: 0 contributions</title></rect>
+    <rect x="422" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-25: 0 contributions</title></rect>
+    <rect x="422" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-26: 0 contributions</title></rect>
+    <rect x="422" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-27: 0 contributions</title></rect>
+    <rect x="422" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-28: 0 contributions</title></rect>
+    <rect x="436" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-29: 0 contributions</title></rect>
+    <rect x="436" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-30: 0 contributions</title></rect>
+    <rect x="436" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-03-31: 0 contributions</title></rect>
+    <rect x="436" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-01: 0 contributions</title></rect>
+    <rect x="436" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-02: 0 contributions</title></rect>
+    <rect x="436" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-03: 0 contributions</title></rect>
+    <rect x="436" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-04: 0 contributions</title></rect>
+    <rect x="450" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-05: 0 contributions</title></rect>
+    <rect x="450" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-06: 0 contributions</title></rect>
+    <rect x="450" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-07: 0 contributions</title></rect>
+    <rect x="450" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-08: 0 contributions</title></rect>
+    <rect x="450" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-09: 0 contributions</title></rect>
+    <rect x="450" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-10: 0 contributions</title></rect>
+    <rect x="450" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-11: 0 contributions</title></rect>
+    <rect x="464" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-12: 0 contributions</title></rect>
+    <rect x="464" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-13: 0 contributions</title></rect>
+    <rect x="464" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-14: 0 contributions</title></rect>
+    <rect x="464" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-15: 0 contributions</title></rect>
+    <rect x="464" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-16: 0 contributions</title></rect>
+    <rect x="464" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-17: 0 contributions</title></rect>
+    <rect x="464" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-18: 0 contributions</title></rect>
+    <rect x="478" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-19: 0 contributions</title></rect>
+    <rect x="478" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-20: 0 contributions</title></rect>
+    <rect x="478" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-21: 0 contributions</title></rect>
+    <rect x="478" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-22: 0 contributions</title></rect>
+    <rect x="478" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-23: 0 contributions</title></rect>
+    <rect x="478" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-24: 0 contributions</title></rect>
+    <rect x="478" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-25: 0 contributions</title></rect>
+    <rect x="492" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-26: 0 contributions</title></rect>
+    <rect x="492" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-27: 0 contributions</title></rect>
+    <rect x="492" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-28: 0 contributions</title></rect>
+    <rect x="492" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-29: 0 contributions</title></rect>
+    <rect x="492" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-04-30: 0 contributions</title></rect>
+    <rect x="492" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-01: 0 contributions</title></rect>
+    <rect x="492" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-02: 0 contributions</title></rect>
+    <rect x="506" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-03: 0 contributions</title></rect>
+    <rect x="506" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-04: 0 contributions</title></rect>
+    <rect x="506" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-05: 0 contributions</title></rect>
+    <rect x="506" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-06: 0 contributions</title></rect>
+    <rect x="506" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-07: 0 contributions</title></rect>
+    <rect x="506" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-08: 0 contributions</title></rect>
+    <rect x="506" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-09: 0 contributions</title></rect>
+    <rect x="520" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-10: 0 contributions</title></rect>
+    <rect x="520" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-11: 0 contributions</title></rect>
+    <rect x="520" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-12: 0 contributions</title></rect>
+    <rect x="520" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-13: 0 contributions</title></rect>
+    <rect x="520" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-14: 0 contributions</title></rect>
+    <rect x="520" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-15: 0 contributions</title></rect>
+    <rect x="520" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-16: 0 contributions</title></rect>
+    <rect x="534" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-17: 0 contributions</title></rect>
+    <rect x="534" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-18: 0 contributions</title></rect>
+    <rect x="534" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-19: 0 contributions</title></rect>
+    <rect x="534" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-20: 0 contributions</title></rect>
+    <rect x="534" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-21: 0 contributions</title></rect>
+    <rect x="534" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-22: 0 contributions</title></rect>
+    <rect x="534" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-23: 0 contributions</title></rect>
+    <rect x="548" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-24: 0 contributions</title></rect>
+    <rect x="548" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-25: 0 contributions</title></rect>
+    <rect x="548" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-26: 0 contributions</title></rect>
+    <rect x="548" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-27: 0 contributions</title></rect>
+    <rect x="548" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-28: 0 contributions</title></rect>
+    <rect x="548" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-29: 0 contributions</title></rect>
+    <rect x="548" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-30: 0 contributions</title></rect>
+    <rect x="562" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-05-31: 0 contributions</title></rect>
+    <rect x="562" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-01: 0 contributions</title></rect>
+    <rect x="562" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-02: 0 contributions</title></rect>
+    <rect x="562" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-03: 0 contributions</title></rect>
+    <rect x="562" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-04: 0 contributions</title></rect>
+    <rect x="562" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-05: 0 contributions</title></rect>
+    <rect x="562" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-06: 0 contributions</title></rect>
+    <rect x="576" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-07: 0 contributions</title></rect>
+    <rect x="576" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-08: 0 contributions</title></rect>
+    <rect x="576" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-09: 0 contributions</title></rect>
+    <rect x="576" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-10: 0 contributions</title></rect>
+    <rect x="576" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-11: 0 contributions</title></rect>
+    <rect x="576" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-12: 0 contributions</title></rect>
+    <rect x="576" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-13: 0 contributions</title></rect>
+    <rect x="590" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-14: 0 contributions</title></rect>
+    <rect x="590" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-15: 0 contributions</title></rect>
+    <rect x="590" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-16: 0 contributions</title></rect>
+    <rect x="590" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-17: 0 contributions</title></rect>
+    <rect x="590" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-18: 0 contributions</title></rect>
+    <rect x="590" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-19: 0 contributions</title></rect>
+    <rect x="590" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-20: 0 contributions</title></rect>
+    <rect x="604" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-21: 0 contributions</title></rect>
+    <rect x="604" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-22: 0 contributions</title></rect>
+    <rect x="604" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-23: 0 contributions</title></rect>
+    <rect x="604" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-24: 0 contributions</title></rect>
+    <rect x="604" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-25: 0 contributions</title></rect>
+    <rect x="604" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-26: 0 contributions</title></rect>
+    <rect x="604" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-27: 0 contributions</title></rect>
+    <rect x="618" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-28: 0 contributions</title></rect>
+    <rect x="618" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-29: 0 contributions</title></rect>
+    <rect x="618" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-06-30: 0 contributions</title></rect>
+    <rect x="618" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-01: 0 contributions</title></rect>
+    <rect x="618" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-02: 0 contributions</title></rect>
+    <rect x="618" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-03: 0 contributions</title></rect>
+    <rect x="618" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-04: 0 contributions</title></rect>
+    <rect x="632" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-05: 0 contributions</title></rect>
+    <rect x="632" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-06: 0 contributions</title></rect>
+    <rect x="632" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-07: 0 contributions</title></rect>
+    <rect x="632" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-08: 0 contributions</title></rect>
+    <rect x="632" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-09: 0 contributions</title></rect>
+    <rect x="632" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-10: 0 contributions</title></rect>
+    <rect x="632" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-11: 0 contributions</title></rect>
+    <rect x="646" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-12: 0 contributions</title></rect>
+    <rect x="646" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-13: 0 contributions</title></rect>
+    <rect x="646" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-14: 0 contributions</title></rect>
+    <rect x="646" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-15: 0 contributions</title></rect>
+    <rect x="646" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-16: 0 contributions</title></rect>
+    <rect x="646" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-17: 0 contributions</title></rect>
+    <rect x="646" y="159" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-07-18: 3 contributions</title></rect>
+    <rect x="660" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-19: 0 contributions</title></rect>
+    <rect x="660" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-20: 0 contributions</title></rect>
+    <rect x="660" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-21: 0 contributions</title></rect>
+    <rect x="660" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-22: 0 contributions</title></rect>
+    <rect x="660" y="131" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-07-23: 7 contributions</title></rect>
+    <rect x="660" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-24: 0 contributions</title></rect>
+    <rect x="660" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-25: 0 contributions</title></rect>
+    <rect x="674" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-26: 0 contributions</title></rect>
+    <rect x="674" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-27: 0 contributions</title></rect>
+    <rect x="674" y="103" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-07-28: 1 contributions</title></rect>
+    <rect x="674" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-29: 0 contributions</title></rect>
+    <rect x="674" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-30: 0 contributions</title></rect>
+    <rect x="674" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-07-31: 0 contributions</title></rect>
+    <rect x="674" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-01: 0 contributions</title></rect>
+    <rect x="688" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-02: 0 contributions</title></rect>
+    <rect x="688" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-03: 0 contributions</title></rect>
+    <rect x="688" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-04: 0 contributions</title></rect>
+    <rect x="688" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-05: 0 contributions</title></rect>
+    <rect x="688" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-06: 0 contributions</title></rect>
+    <rect x="688" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-07: 0 contributions</title></rect>
+    <rect x="688" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-08: 0 contributions</title></rect>
+    <rect x="702" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-09: 0 contributions</title></rect>
+    <rect x="702" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-10: 0 contributions</title></rect>
+    <rect x="702" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-11: 0 contributions</title></rect>
+    <rect x="702" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-12: 0 contributions</title></rect>
+    <rect x="702" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-13: 0 contributions</title></rect>
+    <rect x="702" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-14: 0 contributions</title></rect>
+    <rect x="702" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-15: 0 contributions</title></rect>
+    <rect x="716" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-16: 0 contributions</title></rect>
+    <rect x="716" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-17: 0 contributions</title></rect>
+    <rect x="716" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-18: 0 contributions</title></rect>
+    <rect x="716" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-19: 0 contributions</title></rect>
+    <rect x="716" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-20: 0 contributions</title></rect>
+    <rect x="716" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-21: 0 contributions</title></rect>
+    <rect x="716" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-22: 0 contributions</title></rect>
+    <rect x="730" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-23: 0 contributions</title></rect>
+    <rect x="730" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-24: 0 contributions</title></rect>
+    <rect x="730" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-25: 0 contributions</title></rect>
+    <rect x="730" y="117" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-08-26: 5 contributions</title></rect>
+    <rect x="730" y="131" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-08-27: 1 contributions</title></rect>
+    <rect x="730" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-28: 0 contributions</title></rect>
+    <rect x="730" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-29: 0 contributions</title></rect>
+    <rect x="744" y="75" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-08-30: 1 contributions</title></rect>
+    <rect x="744" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-08-31: 0 contributions</title></rect>
+    <rect x="744" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-01: 0 contributions</title></rect>
+    <rect x="744" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-02: 0 contributions</title></rect>
+    <rect x="744" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-03: 0 contributions</title></rect>
+    <rect x="744" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-04: 0 contributions</title></rect>
+    <rect x="744" y="159" width="11" height="11" rx="2.5" fill="#A855F7" opacity="0.95" stroke="#C084FC" stroke-width="0.8"><title>2026-09-05: 28 contributions</title></rect>
+    <rect x="758" y="75" width="11" height="11" rx="2.5" fill="#A855F7" opacity="0.95" stroke="#C084FC" stroke-width="0.8"><title>2026-09-06: 34 contributions</title></rect>
+    <rect x="758" y="89" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-09-07: 13 contributions</title></rect>
+    <rect x="758" y="103" width="11" height="11" rx="2.5" fill="#D946EF" opacity="0.95" stroke="#F472B6" stroke-width="1.2" filter="url(#glow-magenta)"><title>2026-09-08: 96 contributions</title></rect>
+    <rect x="758" y="117" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-09-09: 1 contributions</title></rect>
+    <rect x="758" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-10: 0 contributions</title></rect>
+    <rect x="758" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-11: 0 contributions</title></rect>
+    <rect x="758" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-12: 0 contributions</title></rect>
+    <rect x="772" y="75" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-09-13: 5 contributions</title></rect>
+    <rect x="772" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-14: 0 contributions</title></rect>
+    <rect x="772" y="103" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-09-15: 4 contributions</title></rect>
+    <rect x="772" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-16: 0 contributions</title></rect>
+    <rect x="772" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-17: 0 contributions</title></rect>
+    <rect x="772" y="145" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-18: 0 contributions</title></rect>
+    <rect x="772" y="159" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-09-19: 2 contributions</title></rect>
+    <rect x="786" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-20: 0 contributions</title></rect>
+    <rect x="786" y="89" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-09-21: 13 contributions</title></rect>
+    <rect x="786" y="103" width="11" height="11" rx="2.5" fill="#A855F7" opacity="0.95"><title>2026-09-22: 17 contributions</title></rect>
+    <rect x="786" y="117" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-09-23: 9 contributions</title></rect>
+    <rect x="786" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-24: 0 contributions</title></rect>
+    <rect x="786" y="145" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-09-25: 3 contributions</title></rect>
+    <rect x="786" y="159" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-26: 0 contributions</title></rect>
+    <rect x="800" y="75" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-27: 0 contributions</title></rect>
+    <rect x="800" y="89" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-28: 0 contributions</title></rect>
+    <rect x="800" y="103" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-09-29: 0 contributions</title></rect>
+    <rect x="800" y="117" width="11" height="11" rx="2.5" fill="#D946EF" opacity="0.95" stroke="#F472B6" stroke-width="1.2" filter="url(#glow-magenta)"><title>2026-09-30: 44 contributions</title></rect>
+    <rect x="800" y="131" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-10-01: 1 contributions</title></rect>
+    <rect x="800" y="145" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-10-02: 3 contributions</title></rect>
   </g>
 
-  <!-- The Acrobatic Hero (Cool, sleek, stealth-violet athletic silhouette) -->
-  <g class="hero-acrobat" filter="url(#purple-glow)">
-    <ellipse cx="0" cy="16" rx="12" ry="3.5" fill="#000000" opacity="0.4" />
-
-    <g transform="translate(0, 0)">
-      <!-- Right Arm (Gauntlet / Web Shooter) -->
-      <path d="M5,-5 Q16,-12 22,-22" fill="none" stroke="url(#stealthSuit)" stroke-width="3.8" stroke-linecap="round" />
-      <circle cx="22" cy="-22" r="2.8" fill="#FFFFFF" filter="url(#laser-glow)" />
-
-      <!-- Left Arm (Dynamic balance) -->
-      <path d="M-5,-3 Q-14,4 -20,10" fill="none" stroke="url(#darkArmor)" stroke-width="3.8" stroke-linecap="round" />
-      <circle cx="-20" cy="10" r="2.5" fill="#7C3AED" />
-
-      <!-- Athletic Legs in kinetic sprint/leap pose -->
-      <path d="M-4,8 Q-14,12 -10,20" fill="none" stroke="url(#darkArmor)" stroke-width="4.2" stroke-linecap="round" />
-      <path d="M-10,20 Q-7,24 -3,22" fill="none" stroke="url(#stealthSuit)" stroke-width="3.6" stroke-linecap="round" />
-
-      <path d="M4,8 Q14,6 18,-2" fill="none" stroke="url(#darkArmor)" stroke-width="4.2" stroke-linecap="round" />
-      <path d="M18,-2 Q22,-4 24,-2" fill="none" stroke="url(#stealthSuit)" stroke-width="3.6" stroke-linecap="round" />
-
-      <!-- Torso Core -->
-      <ellipse cx="0" cy="6" rx="6" ry="4.5" fill="url(#darkArmor)" />
-      <path d="M-6,5 C-8,-2 -5,-9 0,-11 C5,-9 8,-2 6,5 Z" fill="url(#stealthSuit)" />
-
-      <!-- Chest Spider Insignia (Violet neon geometric) -->
-      <polygon points="0,-7 3,-3 0,-1 -3,-3" fill="#FFFFFF" opacity="0.9" />
-      <path d="M-2,-5 L-6,-8 M2,-5 L6,-8 M-2,-2 L-6,-1 M2,-2 L6,-1" stroke="#FFFFFF" stroke-width="0.7" opacity="0.8" />
-
-      <!-- Sleek Angular Mask -->
-      <g transform="translate(0, -17)">
-        <ellipse cx="0" cy="0" rx="7.2" ry="8.8" fill="url(#stealthSuit)" stroke="#6B21A8" stroke-width="0.7" />
-        <!-- Angular Lenses (White with violet perimeter) -->
-        <path d="M-1.2,-1.5 Q-4,-3.2 -5.8,-0.8 Q-3.5,3.2 -1.2,0.8 Z" fill="#FFFFFF" stroke="#07050E" stroke-width="1.4" stroke-linejoin="round" />
-        <path d="M1.2,-1.5 Q4,-3.2 5.8,-0.8 Q3.5,3.2 1.2,0.8 Z" fill="#FFFFFF" stroke="#07050E" stroke-width="1.4" stroke-linejoin="round" />
-      </g>
-    </g>
-  </g>
-
-  <!-- Heatmap Legend -->
-  <g transform="translate(680, 305)" font-family="monospace" font-size="9" fill="#71717A">
+  <!-- Heatmap Legend Bottom Right -->
+  <g transform="translate(685, 195)" font-family="monospace" font-size="9" fill="#71717A">
     <text x="0" y="8" text-anchor="end">Less</text>
     <rect x="8" y="0" width="8" height="8" rx="1.5" fill="#130E24" opacity="0.5" />
     <rect x="20" y="0" width="8" height="8" rx="1.5" fill="#4C1D95" opacity="0.9" />
