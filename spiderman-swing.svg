@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 170" width="100%" height="170">
+  <defs>
+    <!-- Glow filters for web and suit -->
+    <filter id="web-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="spider-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#FF3344" flood-opacity="0.35" />
+    </filter>
+    <linearGradient id="webGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2" />
+      <stop offset="80%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="suitRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4655" />
+      <stop offset="100%" stop-color="#B81424" />
+    </linearGradient>
+    <linearGradient id="suitBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F4C81" />
+      <stop offset="100%" stop-color="#0A2540" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes pendulum {
+      0% {
+        transform: rotate(-26deg);
+      }
+      50% {
+        transform: rotate(26deg);
+      }
+      100% {
+        transform: rotate(-26deg);
+      }
+    }
+
+    @keyframes webPulse {
+      0%, 100% { stroke-opacity: 0.6; stroke-width: 1.2; }
+      50% { stroke-opacity: 1; stroke-width: 1.8; }
+    }
+
+    @keyframes bubbleBob {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+
+    .pendulum-group {
+      transform-origin: 425px -40px;
+      animation: pendulum 3.2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+    }
+
+    .web-strand {
+      stroke: url(#webGrad);
+      stroke-width: 1.5;
+      stroke-dasharray: 4, 1;
+      animation: webPulse 2s ease-in-out infinite;
+    }
+
+    .speech-bubble {
+      animation: bubbleBob 2s ease-in-out infinite;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+  </style>
+
+  <!-- Background guide line / subtle web thread across top -->
+  <line x1="0" y1="2" x2="850" y2="2" stroke="#ffffff" stroke-opacity="0.08" stroke-dasharray="6,4" />
+
+  <!-- The swinging Pendulum Rig -->
+  <g class="pendulum-group" filter="url(#spider-glow)">
+    
+    <!-- Long Web Thread from ceiling to hand -->
+    <line x1="425" y1="-40" x2="425" y2="80" class="web-strand" filter="url(#web-glow)" />
+
+    <!-- Spider-Man Upside-Down Hanging Rig -->
+    <g transform="translate(425, 80)">
+      
+      <!-- Hand gripping web thread -->
+      <circle cx="0" cy="0" r="4.5" fill="#B81424" stroke="#ffffff" stroke-width="0.7" />
+
+      <!-- Arm extending to body -->
+      <path d="M0,0 Q-8,14 -4,24" fill="none" stroke="#B81424" stroke-width="4.5" stroke-linecap="round" />
+      <path d="M0,0 Q8,14 4,24" fill="none" stroke="#B81424" stroke-width="4.5" stroke-linecap="round" />
+
+      <!-- Hanging Web Strand down between legs to hips -->
+      <line x1="0" y1="0" x2="0" y2="24" stroke="#ffffff" stroke-width="1.2" opacity="0.8" />
+
+      <!-- Torso / Suit (Upside down: head is pointing DOWN) -->
+      <!-- Hips / Waist -->
+      <ellipse cx="0" cy="24" rx="8" ry="6" fill="url(#suitBlue)" />
+      
+      <!-- Upper Body / Chest -->
+      <path d="M-9,24 C-11,32 -8,44 0,47 C8,44 11,32 9,24 Z" fill="url(#suitRed)" />
+
+      <!-- Blue side torso panels -->
+      <path d="M-9,24 C-10,30 -7,40 -2,45 C-5,38 -6,30 -5,24 Z" fill="url(#suitBlue)" />
+      <path d="M9,24 C10,30 7,40 2,45 C5,38 6,30 5,24 Z" fill="url(#suitBlue)" />
+
+      <!-- Spider Emblem on chest -->
+      <g transform="translate(0, 36) scale(0.65)">
+        <ellipse cx="0" cy="0" rx="2.5" ry="4" fill="#0A0D14" />
+        <!-- Spider legs -->
+        <path d="M-2,-2 Q-6,-6 -8,-2 M2,-2 Q6,-6 8,-2" stroke="#0A0D14" stroke-width="1" fill="none" />
+        <path d="M-2,2 Q-7,4 -8,8 M2,2 Q7,4 8,8" stroke="#0A0D14" stroke-width="1" fill="none" />
+      </g>
+
+      <!-- Spider-Man Head (pointing downwards) -->
+      <g transform="translate(0, 56)">
+        <!-- Head base -->
+        <ellipse cx="0" cy="0" rx="9" ry="11" fill="url(#suitRed)" stroke="#B81424" stroke-width="0.8" />
+        
+        <!-- Web lines on mask -->
+        <path d="M-8,-2 Q0,-5 8,-2 M-9,2 Q0,6 9,2 M-7,6 Q0,10 7,6" stroke="#0A0D14" stroke-width="0.6" fill="none" opacity="0.4" />
+        <line x1="0" y1="-10" x2="0" y2="10" stroke="#0A0D14" stroke-width="0.6" opacity="0.4" />
+
+        <!-- Iconic Large White Lenses with Black Borders (Upside Down orientation) -->
+        <!-- Left Eye -->
+        <path d="M-1.5,1 Q-5,0 -7,4 Q-4,9 -1.5,5 Z" fill="#FFFFFF" stroke="#0A0D14" stroke-width="1.8" stroke-linejoin="round" />
+        <!-- Right Eye -->
+        <path d="M1.5,1 Q5,0 7,4 Q4,9 1.5,5 Z" fill="#FFFFFF" stroke="#0A0D14" stroke-width="1.8" stroke-linejoin="round" />
+      </g>
+
+      <!-- Legs in dynamic classic acrobatic pose (tucked / inverted V) -->
+      <!-- Left leg -->
+      <path d="M-6,24 Q-16,14 -12,2 Q-10,-4 -6,0" fill="none" stroke="url(#suitBlue)" stroke-width="4.5" stroke-linecap="round" />
+      <path d="M-12,2 Q-10,-4 -6,0" fill="none" stroke="url(#suitRed)" stroke-width="4.2" stroke-linecap="round" /> <!-- red boot -->
+
+      <!-- Right leg -->
+      <path d="M6,24 Q16,14 12,2 Q10,-4 6,0" fill="none" stroke="url(#suitBlue)" stroke-width="4.5" stroke-linecap="round" />
+      <path d="M12,2 Q10,-4 6,0" fill="none" stroke="url(#suitRed)" stroke-width="4.2" stroke-linecap="round" /> <!-- red boot -->
+
+      <!-- Speech / Thought Bubble beside him -->
+      <g class="speech-bubble" transform="translate(24, 30)">
+        <rect x="0" y="0" width="165" height="30" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1.2" />
+        <polygon points="-6,14 0,10 0,18" fill="#161B22" stroke="#30363D" stroke-width="1.2" />
+        <rect x="0" y="10.5" width="2" height="7" fill="#161B22" /> <!-- mask join border -->
+        <text x="10" y="19" fill="#E6EDF3" font-size="11" font-weight="600">
+          🕷️ <tspan fill="#FF4655">Just swinging by...</tspan>
+        </text>
+      </g>
+
+    </g>
+  </g>
+</svg>
