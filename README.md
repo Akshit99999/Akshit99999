@@ -13,6 +13,7 @@
 <a href="https://github.com/Akshit99999">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2500&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&width=720&height=75&lines=Curiosity-driven+engineering+meets+high-speed+systems+design.;Navigating+between+computer+vision%2C+autonomous+AI%2C+and+distributed+scale.;Taking+apart+complex+puzzles+and+building+lean+solutions+from+scratch.;Powered+by+cold+coffee%2C+good+music%2C+and+first-principles+physics." alt="Typing Banner" />
 </a>
+<span></span><span></span>
 <div></div>
 <div></div>
 <p align="center">
