@@ -13,7 +13,8 @@
 <a href="https://github.com/Akshit99999">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2500&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&width=720&height=75&lines=Curiosity-driven+engineering+meets+high-speed+systems+design.;Navigating+between+computer+vision%2C+autonomous+AI%2C+and+distributed+scale.;Taking+apart+complex+puzzles+and+building+lean+solutions+from+scratch.;Powered+by+cold+coffee%2C+good+music%2C+and+first-principles+physics." alt="Typing Banner" />
 </a>
-
+<div></div>
+<div></div>
 <p align="center">
   <img src="https://img.shields.io/badge/STATUS-IN_THE_LAB_BUILDING-07050A?style=flat-square&labelColor=170F2E&color=7C3AED" alt="Status" />
   <img src="https://img.shields.io/badge/FOCUS-AUTONOMOUS_AGENTS-07050A?style=flat-square&labelColor=170F2E&color=8B5CF6" alt="Focus" />
