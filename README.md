@@ -1,98 +1,48 @@
 <div align="center">
 
-<!-- ======================================================== -->
-<!-- TOP BANNER: DEEP OBSIDIAN & ELECTRIC PURPLE              -->
-<!-- ======================================================== -->
 <a href="https://github.com/Akshit99999">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=07050A&height=180&section=header&text=AKSHIT%20SHARMA&fontSize=48&fontColor=F8FAFC&fontAlignY=42&desc=Software%20Engineer%20%E2%80%A2%20Multimodal%20AI%20%E2%80%A2%20Systems%20Builder&descFontSize=16&descColor=C084FC&descAlignY=68" width="100%" alt="Akshit Sharma" />
 </a>
 
-<!-- ======================================================== -->
-<!-- TYPING BANNER: GROUNDED, CURIOUS, HIGH-ENERGY            -->
-<!-- ======================================================== -->
 <a href="https://github.com/Akshit99999">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2500&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&width=720&height=75&lines=Curiosity-driven+engineering+meets+high-speed+systems+design.;Navigating+between+computer+vision%2C+autonomous+AI%2C+and+distributed+scale.;Taking+apart+complex+puzzles+and+building+lean+solutions+from+scratch.;Powered+by+cold+coffee%2C+good+music%2C+and+first-principles+physics." alt="Typing Banner" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2500&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&width=720&height=75&lines=Building+at+the+edge+of+what%27s+possible.;Computer+vision%2C+autonomous+AI%2C+distributed+scale.;Cold+coffee.+First+principles.+Ship+it.;Always+curious%2C+rarely+satisfied." alt="Typing Banner" />
 </a>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/STATUS-IN_THE_LAB_BUILDING-07050A?style=flat-square&labelColor=170F2E&color=7C3AED" alt="Status" />
+  <img src="https://img.shields.io/badge/STATUS-IN_THE_LAB-07050A?style=flat-square&labelColor=170F2E&color=7C3AED" alt="Status" />
   <img src="https://img.shields.io/badge/FOCUS-AUTONOMOUS_AGENTS-07050A?style=flat-square&labelColor=170F2E&color=8B5CF6" alt="Focus" />
   <img src="https://img.shields.io/badge/VISION-REALTIME_EDGE_CV-07050A?style=flat-square&labelColor=170F2E&color=A855F7" alt="Vision" />
-  <img src="https://img.shields.io/badge/PHILOSOPHY-LEAN_&_DETERMINISTIC-07050A?style=flat-square&labelColor=170F2E&color=C084FC" alt="Philosophy" />
 </p>
 
 </div>
 
 ---
 
-### 🎒 The Lab Notebook
+Hey, I'm **Akshit** — software engineer, curious by default, builder by choice.
 
-> *"I’ve always loved taking things apart just to see how the clockwork moves—and then seeing if I can rebuild it a little faster, a little leaner, and a lot more resilient."*
+I work at the intersection of **computer vision, autonomous AI systems, and distributed scale** — the kind of problems where real-world sensors, live data, and AI models have to work together without falling apart. I care less about flashy abstractions and more about systems that hold up under real pressure.
 
-Hey, I’m **Akshit**.
-
-I’m a software engineer and builder driven by genuine curiosity and a love for the craft. I find myself most in my element at the intersections of **computer vision, autonomous multimodal systems, and distributed scale**—tackling the messy, challenging puzzles where real-world sensors, live networks, and AI models meet.
-
-For me, good engineering isn't about piling on bloated abstractions or overly complex scaffolding. It’s about **understanding the physics from first principles**, stripping away the noise, and building solutions that run fast, feel intuitive, and hold up under real-world pressure. 
-
-Give me a good terminal, a cold coffee, and an interesting problem, and I'm happily locked in until it's solved.
+Cold coffee. First principles. Ship it and iterate.
 
 ---
 
-### 🧠 The Engineering Notes
+### What I'm into
 
-```
-┌──[ Guiding Principles ]
-│
-├── 01 // CURIOSITY FIRST, ALWAYS
-│   No black boxes allowed. Whether it's tensor quantization, memory layouts,
-│   or raw socket handshakes, I want to truly understand what's happening underneath
-│   before trying to optimize it.
-│
-├── 02 // SENSOR-TO-SCREEN AGILITY
-│   Connecting real-world physical signals to clean digital instrumentation:
-│   camera feeds, audio waves, and live transit telemetries turned into fast, tactile,
-│   responsive interfaces that feel natural to use.
-│
-└── 03 // CRAFT & RELIABILITY
-    Prototyping fast is fun, but shipping systems that stay up under pressure
-    is what really counts. I care about strictly typed boundaries, resilient queues,
-    and software people can genuinely rely on.
-```
+- **Vision & Edge** — real-time video pipelines (RTSP/WebRTC), multi-target tracking, low-latency edge inference via TensorRT/ONNX, biometric matching at scale
+- **Autonomous Agents** — multimodal systems that can genuinely perceive, reason spatially, and act without constant supervision
+- **Speech & Audio** — generative voice, acoustic modeling, low-latency pipelines that preserve emotional cadence across dialects
+- **Distributed Systems** — high-concurrency backends, event streams (Redis, Celery), and architectures that don't crack under real-world spikes
 
 ---
 
-### 🔬 Frontiers of Exploration
+### 📈 Output
 
-I enjoy moving across whatever layer of the stack the problem demands:
-
-- **👁️ Vision & Edge Optics**  
-  Real-time video ingestion (RTSP/WebRTC) under microsecond constraints. Multi-target tracking, low-latency edge inference via TensorRT/ONNX, biometric matching, and tamper-evident audit logging.
-
-- **🤖 Autonomous Multimodal Systems**  
-  Building software agents that can genuinely perceive: parsing multi-frame video, pulling live web evidence, reasoning spatially, and orchestrating complex tasks autonomously without constant supervision.
-
-- **🎙️ Speech & Acoustic Modeling**  
-  Audio DSP, generative voice pipelines, and low-latency acoustic models that preserve emotional cadence and personal vocal identity across regional dialects.
-
-- **⚡ Fast Distributed Engines**  
-  High-concurrency microservices, event streams (Redis Streams, Celery, Channels), and rock-solid relational architectures that hold up under unpredictable real-time telemetry spikes.
-
-- **🎮 Native Runtimes & Kinetic Mechanics**  
-  Tinkering with C++ bindings, Flutter/Dart mobile physics, and low-overhead client engines that maintain buttery-smooth 60+ FPS performance.
-
----
-
-### 📊 Activity Telemetry // Dispatch Radar
-
-<!-- Clean Cyber Violet Contribution Radar (296 Dispatches, Peak: 96 in a day) -->
 <div align="center">
 
-<img src="./patrol-heatmap.svg" width="100%" alt="Real-time Patrol Contribution Heatmap" />
+<img src="./patrol-heatmap.svg" width="100%" alt="Contribution Heatmap" />
 
 <br/><br/>
 
-<!-- Stats Grid: Sleek Deep Purple Theme -->
 <table>
   <tr>
     <td width="50%" align="center">
@@ -102,18 +52,13 @@ I enjoy moving across whatever layer of the stack the problem demands:
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=Akshit99999&background=07050A&border=2E1065&stroke=2E1065&ring=A855F7&fire=A855F7&currStreakLabel=C084FC&sideNums=F1F5F9&sideLabels=94A3B8&dates=64748B" width="100%" alt="GitHub Streak" />
     </td>
   </tr>
-  <tr>
-    <td colspan="2" align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Akshit99999&layout=compact&bg_color=07050A&title_color=A855F7&text_color=94A3B8&icon_color=C084FC&border_color=2E1065&langs_count=8&hide_border=false" width="85%" alt="Top Languages" />
-    </td>
-  </tr>
 </table>
 
 </div>
 
 ---
 
-### 🛠️ The Utility Belt
+### 🛠️ Stack
 
 <table width="100%">
   <tbody>
@@ -169,24 +114,14 @@ I enjoy moving across whatever layer of the stack the problem demands:
 
 ---
 
-### 📡 Establish Uplink
-
-Always open to discussing hard engineering problems, computer vision pipelines, autonomous systems, or interesting ideas over coffee.
+Always open to interesting problems, hard engineering conversations, or just talking shop.
 
 <p align="center">
   <a href="mailto:akshitsharma684@gmail.com">
-    <img src="https://img.shields.io/badge/Direct_Mail-akshitsharma684@gmail.com-A855F7?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/Akshit99999">
-    <img src="https://img.shields.io/badge/GitHub-Akshit99999-1E1B2E?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+    <img src="https://img.shields.io/badge/Email-akshitsharma684@gmail.com-A855F7?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
   </a>
   &nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/akshit-sharma-4013bb384">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-7C3AED?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
 </p>
-
-<div align="center">
-  <p><sub><i>"Always building, always learning."</i></sub></p>
-</div>
