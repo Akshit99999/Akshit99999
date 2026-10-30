@@ -5,7 +5,7 @@
 </a>
 
 <a href="https://github.com/Akshit99999">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2500&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&width=720&height=75&lines=Building+at+the+edge+of+what%27s+possible.;Computer+vision%2C+autonomous+AI%2C+distributed+scale.;Cold+coffee.+First+principles.+Ship+it.;Always+curious%2C+rarely+satisfied." alt="Typing Banner" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2500&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&width=720&height=75&lines=Can%27t+leave+a+problem+alone+until+I+understand+it.;Building+at+the+intersection+of+vision%2C+AI%2C+and+scale.;No+black+boxes.+First+principles+only.;Cold+coffee+and+a+good+terminal+is+all+I+need." alt="Typing Banner" />
 </a>
 
 <p align="center">
@@ -18,20 +18,20 @@
 
 ---
 
-Hey, I'm **Akshit** — software engineer, curious by default, builder by choice.
+Hey, I'm **Akshit**.
 
-I work at the intersection of **computer vision, autonomous AI systems, and distributed scale** — the kind of problems where real-world sensors, live data, and AI models have to work together without falling apart. I care less about flashy abstractions and more about systems that hold up under real pressure.
+I've always been the kind of person who can't leave a problem alone until I know exactly why it works — or why it doesn't. That itch is what pulled me into **computer vision, autonomous AI, and distributed systems**: the spaces where real sensors, live data, and models have to genuinely cooperate under pressure, not just in a notebook.
 
-Cold coffee. First principles. Ship it and iterate.
+I don't really do black boxes. If I'm using something, I want to know what's happening three layers underneath — not because I have to, but because that's where the interesting stuff lives. Build lean, understand deeply, ship something that actually holds up. Cold coffee somewhere in the middle of all that.
 
 ---
 
 ### What I'm into
 
-- **Vision & Edge** — real-time video pipelines (RTSP/WebRTC), multi-target tracking, low-latency edge inference via TensorRT/ONNX, biometric matching at scale
-- **Autonomous Agents** — multimodal systems that can genuinely perceive, reason spatially, and act without constant supervision
-- **Speech & Audio** — generative voice, acoustic modeling, low-latency pipelines that preserve emotional cadence across dialects
-- **Distributed Systems** — high-concurrency backends, event streams (Redis, Celery), and architectures that don't crack under real-world spikes
+- **Vision & Edge** — I like the constraint of it. Real-time video under tight latency budgets, multi-target tracking, edge inference that holds up in the field and not just on a benchmark.
+- **Autonomous Agents** — systems that can perceive, reason spatially, and act without someone holding their hand. The harder the task, the more interesting the design problem.
+- **Speech & Audio** — acoustic modeling and voice pipelines that don't strip the personality out of someone's voice. The subtle parts are usually the hardest and most worth solving.
+- **Distributed Systems** — the unglamorous side of scale that most people skip until something breaks at 3am. I'd rather think about it upfront.
 
 ---
 
@@ -114,7 +114,7 @@ Cold coffee. First principles. Ship it and iterate.
 
 ---
 
-Always open to interesting problems, hard engineering conversations, or just talking shop.
+If something I'm building overlaps with something you're thinking about — or you just want to talk through a hard problem — I'm usually around.
 
 <p align="center">
   <a href="mailto:akshitsharma684@gmail.com">
