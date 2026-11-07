@@ -46,7 +46,7 @@ I don't really do black boxes. If I'm using something, I want to know what's hap
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=Akshit99999&show_icons=true&bg_color=07050A&title_color=A855F7&text_color=94A3B8&icon_color=C084FC&border_color=2E1065&count_private=true&include_all_commits=true&hide_border=false" width="100%" alt="GitHub Stats" />
+        <img src="https://ghstats.dev/api/card?username=akshit99999&theme=radical" alt="GitHub Stats Card" />
     </td>
     <td width="50%" align="center">
       <img src="https://github-readme-streak-stats.herokuapp.com/?user=Akshit99999&background=07050A&border=2E1065&stroke=2E1065&ring=A855F7&fire=A855F7&currStreakLabel=C084FC&sideNums=F1F5F9&sideLabels=94A3B8&dates=64748B" width="100%" alt="GitHub Streak" />
