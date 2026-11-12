@@ -432,7 +432,7 @@
     <rect x="758" y="159" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-10-24: 3 contributions</title></rect>
     <rect x="772" y="75" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-10-25: 5 contributions</title></rect>
     <rect x="772" y="89" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-10-26: 14 contributions</title></rect>
-    <rect x="772" y="103" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-10-27: 2 contributions</title></rect>
+    <rect x="772" y="103" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-10-27: 1 contributions</title></rect>
     <rect x="772" y="117" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-10-28: 1 contributions</title></rect>
     <rect x="772" y="131" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-10-29: 1 contributions</title></rect>
     <rect x="772" y="145" width="11" height="11" rx="2.5" fill="#7C3AED" opacity="0.95"><title>2026-10-30: 6 contributions</title></rect>
@@ -447,7 +447,8 @@
     <rect x="800" y="75" width="11" height="11" rx="2.5" fill="#A855F7" opacity="0.95" stroke="#C084FC" stroke-width="0.8"><title>2026-11-08: 33 contributions</title></rect>
     <rect x="800" y="89" width="11" height="11" rx="2.5" fill="#A855F7" opacity="0.95" stroke="#C084FC" stroke-width="0.8"><title>2026-11-09: 24 contributions</title></rect>
     <rect x="800" y="103" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-11-10: 1 contributions</title></rect>
-    <rect x="800" y="117" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-11-11: 0 contributions</title></rect>
+    <rect x="800" y="117" width="11" height="11" rx="2.5" fill="#4C1D95" opacity="0.95"><title>2026-11-11: 1 contributions</title></rect>
+    <rect x="800" y="131" width="11" height="11" rx="2.5" fill="#130E24" opacity="0.45"><title>2026-11-12: 0 contributions</title></rect>
   </g>
 
   <!-- Heatmap Legend Bottom Right -->
